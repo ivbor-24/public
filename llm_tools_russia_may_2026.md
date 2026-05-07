@@ -118,7 +118,62 @@
 
 ---
 
-## 4. Инструменты для локального инференса
+## 4. Экосистемы расширений и дополнительные инструменты
+
+Поверх агентов выстраиваются целые экосистемы плагинов, скиллов и вспомогательных инструментов. Они добавляют агентам новые способности, управляют контекстом между сессиями, хранят долговременную память.
+
+### 4.1. Плагины, скиллы, MCP-серверы — экосистемы агентов
+
+Практически каждый крупный агент обзавёлся собственной системой расширений. Вот как это устроено у ключевых игроков:
+
+| Агент | Формат плагинов/скиллов | Маркетплейс | MCP | Особенности |
+|---|---|---|---|---|
+| **OpenClaw** | Native-плагины (`.openclaw.plugin.json`) + bundle-плагины (Codex/Claude/Cursor) + AgentSkills (SKILL.md) | **ClawHub** — 5400+ скиллов, 52.7K инструментов, 180K пользователей, 12M загрузок | Да (через bundle-плагины) | Крупнейший реестр скиллов; любой пользователь GitHub может опубликовать; категории: self-improving agent, security, GitHub, dashboard, soul и др. |
+| **Claude Code** | Плагины (`.claude-plugin/plugin.json`), скиллы (SKILL.md), хуки (9 событий) | Официальный Anthropic marketplace + приватные для команд | Да (через `.mcp.json`) | 13 официальных плагинов: code-review, feature-dev, plugin-dev, hookify, pr-review-toolkit и др. |
+| **Pi-agent** | Extensions (TypeScript-модули), Skills (SKILL.md), Pi Packages (npm) | Нет централизованного, npm-пакеты | Нет (принципиально) | Extensions регистрируют инструменты, команды, hotkeys, UI-компоненты, обработчики событий. Можно заменить встроенные инструменты, добавить sub-agents, plan mode, permission gates |
+| **OpenCode** | MCP-серверы, Custom Commands (Markdown), плагины | Нет (MCP-сообщество) | Да | MCP-серверы через stdio/SSE; 75+ LLM-провайдеров; LSP-автозагрузка |
+| **Cline** | MCP-серверы (создание из чата), AgentSkills (`.agents/skills/`), `.clinerules` | Нет (MCP-сообщество) | Да — **создаёт MCP-серверы из чата** | Уникальная фича: агент сам пишет и устанавливает новые MCP-серверы по текстовому описанию |
+| **Cursor** | `.cursor/rules`, `.cursor-plugin`, MCP | Нет | Да | AgentSkills |
+| **Windsurf** | `.windsurfrules`, MCP | Нет | Да | Ограничено |
+
+**MCP (Model Context Protocol)** стал универсальным стандартом подключения инструментов. Репозиторий `modelcontextprotocol/servers` — 85K звёзд, 10K форков, тысячи community-серверов. **AgentSkills (SKILL.md)** — стандарт для скиллов с YAML frontmatter + инструкциями; модель сама решает, когда активировать скилл. Наблюдается конвергенция форматов: OpenClaw поддерживает bundle-плагины Codex/Claude/Cursor, MCP принят всеми основными агентами, Skill-форматы совместимы между Pi, Claude Code, Cline, OpenClaw.
+
+### 4.2. Управление контекстом и долговременной памятью
+
+Обычный агент «забывает» всё после завершения сессии. Инструменты памяти решают эту проблему — они сохраняют и извлекают релевантный контекст из прошлых взаимодействий.
+
+| Инструмент | Тип | Звёзд | Self-host | MCP | Язык | Особенности |
+|---|---|---|---|---|---|---|
+| **Mem0** | Open-source (Apache 2.0) + Cloud | 55K | Да (`pip install mem0ai` / Docker) | Да | Python, TypeScript | Multi-level memory (User/Session/Agent); v3 (апрель 2026): single-pass ADD-only экстракция, entity linking, multi-signal retrieval; бенчмарки 91.6 LoCoMo / 93.4 LongMemEval; встроен в OpenCode |
+| **Letta** (ex-MemGPT) | Open-source (Apache 2.0) + Cloud | 22.5K | Да (Docker) | Нет (REST API) | Python | Self-editing memory blocks + continual learning; агент сам обновляет память; архивная память + recall |
+| **LangMem** | Open-source (MIT) | 1.4K | Да (`pip install langmem`) | Нет | Python | Memory SDK для LangGraph; core memory API; background memory manager; интеграция с LangGraph Storage |
+| **Zep** | Проприетарное облако | 4.5K | ❌ (deprecated) | Да | Python, Go | Graph RAG + temporal knowledge graph (Graphiti); sub-200ms latency; SOC2/HIPAA |
+
+### 4.3. Векторные базы данных как memory backend
+
+Все memory-решения используют векторные БД для хранения и поиска. Самые популярные — все open-source с возможностью локального развёртывания:
+
+| БД | Звёзд | Язык | Лицензия | Локально | Облако | Особенности |
+|---|---|---|---|---|---|---|
+| **Milvus** | 44.2K | Go + C++ | Apache 2.0 | Да (Docker/K8s, Milvus Lite) | Zilliz Cloud (free tier) | GPU acceleration, fully distributed, 10B+ векторов |
+| **Qdrant** | 31.1K | Rust | Apache 2.0 | Да (Docker / in-memory) | Qdrant Cloud (free tier) | Квантование векторов (экономия RAM до 97%); фильтрация по payload |
+| **ChromaDB** | 27.8K | Rust + Python | Apache 2.0 | Да (embedded / Docker) | Chroma Cloud | API из 4 функций; встроена в Mem0 по умолчанию |
+| **Weaviate** | 16.1K | Go | BSD-3 | Да (Docker) | Weaviate Cloud | Гибридный поиск, RAG, реранкинг, мультиарендность |
+| **Pinecone** | — | — | Проприетарная | ❌ (cloud only) | Pinecone Cloud | Serverless, SOC2/HIPAA |
+
+### 4.4. Доступность из России и рекомендации
+
+**Полностью локальные решения** (Pi-agent, Cline, Aider + Mem0 self-hosted + ChromaDB/Qdrant/Milvus локально + Ollama) — работают без VPN, без внешних API, без иностранных карт. Это полноценный офлайн-стек.
+
+**Смешанные решения** — агент локально, LLM через OpenRouter (крипта), память локально. Доступ к GitHub, npm, PyPI, Docker Hub — без VPN (май 2026).
+
+**Облачные решения** (Zep Cloud, Mem0 Cloud, Letta Cloud, Pinecone) — требуют VPN и иностранную карту. Для российского пользователя предпочтительны self-hosted альтернативы.
+
+Рекомендуемый стек: **Cline (VSCode) или Pi-agent (CLI) + OpenRouter (API-прокси) + Mem0 self-hosted (память) + Qdrant (векторная БД) + MCP-серверы сообщества** — всё локально, кроме LLM, которая идёт через OpenRouter без VPN.
+
+---
+
+## 5. Инструменты для локального инференса
 
 | Инструмент | Тип | Платформы | Распределённый инференс | API-сервер | Форматы моделей | GPU-бэкенды | Ключевые особенности | Звёзды |
 |---|---|---|---|---|---|---|---|---|
@@ -133,7 +188,7 @@
 | **MLX** | Open-source (Apple) | Mac (Apple Silicon), Linux | Multi-device (CPU+GPU unified memory) | Python API (`mlx-lm`); finetuning (LoRA) | MLX, HF-конвертация, GGUF | Apple Silicon GPU (Metal) | **Разработан Apple**; NumPy-подобный Python API; lazy computation; autograd | 26K |
 | **llama.rn** | Open-source | **iOS (Metal), Android (OpenCL/NPU)** | ✗ (мобильные устройства) | React Native binding для llama.cpp | GGUF | Metal, OpenCL, Hexagon NPU | Нативный мобильный инференс; multimodal; tool calling | 931 |
 
-### 4.1. Российские инструменты для локального инференса
+### 5.1. Российские инструменты для локального инференса
 
 **Отсутствуют** как класс. Российские модели (GigaChat, Kandinsky) запускаются через стандартные международные инструменты (llama.cpp, vLLM). Из российских наработок:
 - **GGUF-квантизации GigaChat 3.1** — опубликованы ai-sage на Hugging Face. Загружаются и запускаются через llama.cpp / Ollama как обычные GGUF.
@@ -142,9 +197,9 @@
 
 ---
 
-## 5. Репозитории открытых моделей
+## 6. Репозитории открытых моделей
 
-### 5.1. Доступные без VPN
+### 6.1. Доступные без VPN
 
 | Репозиторий | Назначение | Примечание |
 |---|---|---|
@@ -154,12 +209,12 @@
 | **Ollama Library** (ollama.com/library) | Встроенный реестр моделей Ollama | ✅ Доступен. |
 | **CivitAI** (civitai.com) | Репозиторий моделей для генерации изображений (SD, Flux) | ✅ Доступен. |
 
-### 5.2. С VPN
+### 6.2. С VPN
 
 - Hugging Face — формально доступен, но скачивание больших файлов с `cdn-lfs.huggingface.co` может работать нестабильно без VPN.
 - Некоторые HF Spaces геоблокированы владельцами.
 
-### 5.3. Российские открытые модели и их размещение
+### 6.3. Российские открытые модели и их размещение
 
 Собственного российского репозитория моделей (аналога Hugging Face) **не существует на май 2026**.
 
@@ -176,7 +231,7 @@
 
 ---
 
-## 6. Итоговые рекомендации
+## 7. Итоговые рекомендации
 
 ### Для пользователя чатов в РФ (приоритет по качеству/удобству):
 
