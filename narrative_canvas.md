@@ -44,6 +44,25 @@
 
 Все эти чаты доступны из России без VPN. Минус: часть требует китайский номер для регистрации.
 
+### Таблица 1.1. Доступные без VPN
+
+>>>
+
+| Чат | Вендор | Страна | Текст | Изобр. | Ген. изобр. | Файлы | Голос | Код | Поиск | Уникальные фичи веб-интерфейса |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **DeepSeek Chat** | DeepSeek | КНР | ✓ | ✓* | ✗ | ✓ | ✗ | ✓ | ✓ | V4-Pro с 1M токенов контекста; редкие обновления (V4 — апрель 2026); модель открыта (MIT) |
+| **Qwen Chat** | Alibaba | КНР | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Qwen Studio — переключение моделей (Qwen3.6-Plus и др.); встроенная генерация изображений (Qwen Image); **видеопонимание**; голосовой ввод; кодинг-режим с возможностью подключения репозитория |
+| **Kimi** | Moonshot AI | КНР | ✓ | ✓ | ✗ | ✓ | ✗ | ✓ | ✓ | Сверхдлинный контекст (200K+ токенов); **встроенный генератор презентаций (PPT)**; Kimi+ — агенты для специализированных задач; кодинг-режим |
+| **Doubao** | ByteDance | КНР | ✓ | ✓ | ✓ | ✓ | ✓ | ✗ | ✓ | **Голосовой диалог** — естественная речь; AI-персонажи; экосистема Douyin/TikTok |
+| **Ernie Bot** | Baidu | КНР | ✓ | ✓ | ✓ | ✓ | ✗ | ✓ | ✓ | Плагины расширения; глубокая интеграция с поиском Baidu; ERNIE 4.5 |
+| **Spark** | iFlytek | КНР | ✓ | ✓ | ✗ | ✓ | ✓ | ✗ | ✗ | **Лидер голосовых технологий** — распознавание и синтез речи; отраслевые ассистенты (медицина, право, образование) |
+| **YandexGPT** | Яндекс | РФ | ✓ | ✗ | Шедеврум† | ✓ | ✓ | ✓ | ✓ | Интеграция с сервисами Яндекса (почта, карты, музыка); **Яндекс 300** — реферат лонгрида, подкаста или длинного видео по ссылке; Алиса Про (голос, по Плюсу); Шедеврум для изображений |
+| **GigaChat** | Сбер | РФ | ✓ | ✓ | ✓ Kandinsky | ✓ | Салют† | ✓ | ✗ | **Kandinsky** — генерация изображений прямо в чате; экосистема Сбера (банк, умный дом); бесплатный тариф |
+
+\* Чтение текста из изображений, без генерации. † Отдельный сервис/ассистент, не в веб-интерфейсе чата.
+
+<<<
+
 **Российские решения** — варианта два и оба так себе: [YandexGPT](https://alice.yandex.ru/) aka AlisaAI и [GigaChat](https://giga.chat/). Отстают от флагманов западного моделестроения очень сильно. Для серьезной работы (по крайней мере, с текстами, картинками и видео) - почти не пригодны. Но плюcы, конечно есть. Русский язык для них родной. YandexGPT встроен в поиск Яндекса, в Алису, в сервис [«Яндекс 300»](https://300.ya.ru/) (гусары,молчать!) - краткий пересказ статей, подкастов и видео. GigaChat от Сбера умеет генерировать изображения (Kandinsky) прямо в чате. Оба работают без VPN, Яндекс еще и доступен при режиме "белых списков" (почти всегда), принимают российские карты для премиум-функций.
 
 А теперь — веб-чаты, которые без VPN **не открываются**: [ChatGPT](https://chatgpt.com/), [Claude](https://claude.ai/), [Gemini](https://gemini.google.com/app), [Grok](https://grok.com/), [Perplexity](https://www.perplexity.ai/), [Mistral](https://mistral.ai/). Это западные флагманы. У каждого — арсенал уникальных фич: Artifacts у Claude, Canvas и GPTs у ChatGPT, Perplexity с полным цитированием источников. Есть все, что и у web-реализаций из Поднебесной и с горкой. Но дверь заперта. Нужны VPN и, для платных подписок, иностранная карта. Досадно, но ладно.
@@ -57,8 +76,8 @@
 
 #### Поставщики «мозгов» бывают двух сортов
 
-- **Вендоры** — разработчики моделей: [OpenAI](https://openai.com/api/), [Anthropic](https://platform.claude.com/docs/en/api/overview), [Google](https://aistudio.google.com/app/api-keys), [DeepSeek](https://platform.deepseek.com/), [Alibaba (Qwen)](https://modelstudio.console.alibabacloud.com/). У них прямой доступ к собственным моделям.
-- **Агрегаторы** — посредники, собирающие модели от разных вендоров под одной крышей: [OpenRouter](https://openrouter.ai/) *есть бесплатный план*, [DeepInfra](https://deepinfra.com/deepstart), [Together AI](https://docs.together.ai/docs/api-keys-authentication), [Groq](https://console.groq.com/keys) *есть бесплатный план*, [Fireworks AI](https://docs.fireworks.ai/api-reference/introduction), [OpenCode (Zen/Go)](https://opencode.ai/) *есть бесплатный план*, [Cerebras](https://cloud.cerebras.ai/) *есть бесплатный план*. Список можно продолжать и продолжать, заканчивая помойками-однодневками от успешных васянов с ветхими стойками в древних ЦОДах. Отмечу, многие из агрегаторов не только продают доступ к общим инференс-инстансам, для солидных господ есть предложения о покупке отдельного инстанса или, натурально, выделенного вычислительного кластера для рассупонивания модельки.
+**Вендоры** — разработчики моделей: [OpenAI](https://openai.com/api/), [Anthropic](https://platform.claude.com/docs/en/api/overview), [Google](https://aistudio.google.com/app/api-keys), [DeepSeek](https://platform.deepseek.com/), [Alibaba (Qwen)](https://modelstudio.console.alibabacloud.com/). У них прямой доступ к собственным моделям.
+**Агрегаторы** — посредники, собирающие модели от разных вендоров под одной крышей: [OpenRouter](https://openrouter.ai/) *есть бесплатный план*, [DeepInfra](https://deepinfra.com/deepstart), [Together AI](https://docs.together.ai/docs/api-keys-authentication), [Groq](https://console.groq.com/keys) *есть бесплатный план*, [Fireworks AI](https://docs.fireworks.ai/api-reference/introduction), [OpenCode (Zen/Go)](https://opencode.ai/) *есть бесплатный план*, [Cerebras](https://cloud.cerebras.ai/) *есть бесплатный план*. Список можно продолжать и продолжать, заканчивая помойками-однодневками от успешных васянов с ветхими стойками в древних ЦОДах. Отмечу, многие из агрегаторов не только продают доступ к общим инференс-инстансам, для солидных господ есть предложения о покупке отдельного инстанса или, натурально, выделенного вычислительного кластера для рассупонивания модельки.
 
 Отдельного упоминания стоит **[nVidia](https://build.nvidia.com/nvidia)** - эти ребята производят не только лучшие GPU и NPU на сегодняшний день, они еще и файн-тюнят открытые модельки, предоставляют API и держат репозиторий открытых моделей (что это и зачем - дальше по тексту).
 
@@ -72,22 +91,22 @@
 
 **Open-source агенты:**
 
-- [**OpenCode**](https://github.com/anomalyco/opencode) (150K ★) — CLI/Desktop/IDE/Web. TypeScript. Поддерживает 75+ провайдеров, включая локальные модели. Может работать в headless-режиме. Кроссплатформенный. Универсальный.
-- [**Cline**](https://github.com/cline/cline) (61.5K ★) — расширение VS Code. MCP из коробки, умеет генерировать MCP-серверы прямо из чата. Подтверждение каждого действия (human-in-the-loop).
-- [**Kilocode**](https://github.com/Kilo-Org/kilocode) (19K ★) — позиционируется как "инженерная платформа", кроссплатформенный, расширенный функции автоматизации/ выполнения циклических задач.
-- [**Aider**](https://github.com/Aider-AI/aider) (44.5K ★) — CLI, Python. Фишка: Repomap — карта репозитория для навигации модели.
-- [**Qwen Code**](https://github.com/QwenLM/qwen-code) (24K ★) — CLI от Alibaba. Заточен под семейство Qwen, но работает с любыми моделями. Поддержка Skills и SubAgents.
-- [**Roo Code**](https://github.com/RooCodeInc/Roo-Code) (24K ★) — форк Cline с фокусом на кастомизацию режимов. Поддерживает русский язык в интерфейсе.
-- **[LangChain](https://github.com/langchain-ai/langchain), [CrewAI](https://github.com/crewAIInc/crewAI), [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT), [MetaGPT](https://github.com/FoundationAgents/MetaGPT), [Qwen Agent](https://github.com/QwenLM/Qwen-Agent)** — фреймворки для построения собственных агентных систем. От библиотек до платформ с marketplace.
-- [**Pi-agent**](https://github.com/earendil-works/pi) (45.8K ★) — минималистичный terminal-based harness от Mario Zechner. Философия: «адаптируй pi под себя, а не наоборот». Собственный TUI-движок. Не поддерживает MCP принципиально — всё необходимое строится через extensions. По сути — эталонный каркас для построения LLM-агентов: на его SDK построен, в частности, OpenClaw.
+[**OpenCode**](https://github.com/anomalyco/opencode) (150K ★) — CLI/Desktop/IDE/Web. TypeScript. Поддерживает 75+ провайдеров, включая локальные модели. Может работать в headless-режиме. Кроссплатформенный. Универсальный.
+[**Cline**](https://github.com/cline/cline) (61.5K ★) — расширение VS Code. MCP из коробки, умеет генерировать MCP-серверы прямо из чата. Подтверждение каждого действия (human-in-the-loop).
+[**Kilocode**](https://github.com/Kilo-Org/kilocode) (19K ★) — позиционируется как "инженерная платформа", кроссплатформенный, расширенный функции автоматизации/ выполнения циклических задач.
+[**Aider**](https://github.com/Aider-AI/aider) (44.5K ★) — CLI, Python. Фишка: Repomap — карта репозитория для навигации модели.
+[**Qwen Code**](https://github.com/QwenLM/qwen-code) (24K ★) — CLI от Alibaba. Заточен под семейство Qwen, но работает с любыми моделями. Поддержка Skills и SubAgents.
+[**Roo Code**](https://github.com/RooCodeInc/Roo-Code) (24K ★) — форк Cline с фокусом на кастомизацию режимов. Поддерживает русский язык в интерфейсе.
+**[LangChain](https://github.com/langchain-ai/langchain), [CrewAI](https://github.com/crewAIInc/crewAI), [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT), [MetaGPT](https://github.com/FoundationAgents/MetaGPT), [Qwen Agent](https://github.com/QwenLM/Qwen-Agent)** — фреймворки для построения собственных агентных систем. От библиотек до платформ с marketplace.
+[**Pi-agent**](https://github.com/earendil-works/pi) (45.8K ★) — минималистичный terminal-based harness от Mario Zechner. Философия: «адаптируй pi под себя, а не наоборот». Собственный TUI-движок. Не поддерживает MCP принципиально — всё необходимое строится через extensions. По сути — эталонный каркас для построения LLM-агентов: на его SDK построен, в частности, OpenClaw.
 
 **Проприетарные агенты:**
 
-- **[Claude Code](https://claude.com/product/claude-code)** (Anthropic) — терминальный AI-разработчик. Автономная работа с кодом, коммиты, PR. Но: в РФ нужен и VPN, и иностранная карта. Худшая доступность.
-- **[VS Code](https://code.visualstudio.com/)** — база. Минималистичный, расширяемый. Самый распространённый. **GitHub Copilot** - это по сути то же самое.
-- **[Cursor](https://cursor.com/get-started)** — AI IDE (форк VS Code). Composer 2, сверхточное автодополнение, облачные агенты.
-- **[Windsurf](https://www.windsurf.dev/)** — ещё один agentic IDE. Cascade (локальный агент) + Devin (облачный). Agent Command Center — канбан-доска для управления агентами.
-- **[Antigravity](https://antigravity.google/)** (Google) — десктоп-приложение. Регионально ограничен, но сообщество поддерживает `open-antigravity-patcher` для обхода блокировок в РФ.
+**[Claude Code](https://claude.com/product/claude-code)** (Anthropic) — терминальный AI-разработчик. Автономная работа с кодом, коммиты, PR. Но: в РФ нужен и VPN, и иностранная карта. Худшая доступность.
+**[VS Code](https://code.visualstudio.com/)** — база. Минималистичный, расширяемый. Самый распространённый. **GitHub Copilot** - это по сути то же самое.
+**[Cursor](https://cursor.com/get-started)** — AI IDE (форк VS Code). Composer 2, сверхточное автодополнение, облачные агенты.
+**[Windsurf](https://www.windsurf.dev/)** — ещё один agentic IDE. Cascade (локальный агент) + Devin (облачный). Agent Command Center — канбан-доска для управления агентами.
+**[Antigravity](https://antigravity.google/)** (Google) — десктоп-приложение. Регионально ограничен, но сообщество поддерживает `open-antigravity-patcher` для обхода блокировок в РФ.
 
 **Важный нюанс:** почти все агенты — «агностики». Они не привязаны к конкретному вендору. Вы можете направить Cline на OpenRouter, Aider — на DeepSeek API, OpenCode — на локальную Ollama. Связка выбирается под задачу и бюджет. Исключения: Claude Code работает только с моделями Anthropic; Qwen Code оптимизирован под Qwen, но принимает и другие эндпоинты.
 
