@@ -93,6 +93,12 @@
 | **CrewAI** | Библиотека / CLI | ✓ | ✓ | ✓ | MCP | Crews (автономные) + Flows (event-driven) | Python | Multi-agent оркестрация | 51K ★ | Бесплатно |
 | **AutoGPT** | Платформа / CLI / Web | ✓ | ✓ | ✓ | Частично | Self-hosted + Cloud beta | Python | Agent Builder, Marketplace | 184K ★ | Бесплатно |
 | **MetaGPT** | CLI | ✓ | ✓ | ✓ | Нет | CLI / HuggingFace Space | Python | Роли PM, архитектора, инженера в одной системе | 68K ★ | Бесплатно |
+| **Pi-agent** | CLI (TUI) / RPC / SDK | ✓ (WSL2) | ✓ | ✓ | Extensions + Skills (**нет MCP**) | RPC (stdin/stdout JSONL), SDK | TypeScript | 25+ провайдеров; Anthropic Pro/Max, ChatGPT Plus/Pro, Copilot; tmux, контейнеры | 45.8K ★ | Бесплатно (MIT) |
+| **OpenClaw** | CLI (TUI) / Gateway + Web UI / iOS + Android / Desktop | ✓ (WSL2), Docker | ✓ | ✓ | **MCP** (через bundle-плагины) + native-плагины + Skills (ClawHub) | Gateway/клиент (WebSocket) + iOS/Android nodes | TypeScript | 23+ каналов (WhatsApp, Telegram, Slack, Discord, Signal, iMessage, Matrix и др.); pi-agent SDK; Docker/SSH sandboxes | 369K ★ | Бесплатно (MIT) |
+
+**Примечание:** Pi-agent (badlogic/pi-mono) — минималистичный terminal-based harness для LLM-агентов. Философия: «адаптируй pi под себя, а не наоборот». Расширяем через Extensions/Skills/Packages. 4 режима: интерактивный TUI, Print/JSON, RPC, SDK. Имеет собственный TUI-движок (`@mariozechner/pi-tui`), используемый в том числе OpenCode и OpenClaw. MCP не поддерживает принципиально — сообщество строит нужное через extensions.
+
+**Примечание:** OpenClaw (openclaw/openclaw) — не чисто кодинг-агент, а персональный AI-ассистент с мультиканальным Gateway. Агентный движок построен на Pi-agent SDK. Сыграл ключевую роль в популяризации TUI среди массовой аудитории (369K ★) и повлиял на архитектуру последующих кодинг-агентов. Skills-система ClawHub — 5400+ навыков. Плагины совместимы с форматами Codex/Claude/Cursor.
 
 ### 3.2. Проприетарные
 
