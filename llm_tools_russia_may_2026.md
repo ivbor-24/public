@@ -92,41 +92,52 @@
 
 ## 3. Инструменты для агентной работы
 
-### 3.1. Open-source
+### 3.1. Агенты общего назначения (ассистенты)
 
-| Инструмент | Интерфейс | Windows | macOS | Linux | Плагины/MCP | Клиент-сервер | Язык | Интеграции | GitHub | Цена |
-|---|---|---|---|---|---|---|---|---|---|---|
-| **OpenCode** | CLI / Desktop / IDE / Web | ✓ | ✓ | ✓ | MCP, плагины | Мультисессии, headless, Web | TypeScript | 75+ провайдеров, GitHub Copilot, LSP | 150K ★ | Бесплатно |
-| **Qwen Code** | CLI / VS Code / JetBrains / Zed | ✓ | ✓ | ✓ | MCP, Skills, SubAgents | Headless (`qwen -p`), SDK | TypeScript | OpenAI-API, Anthropic, локальные (Ollama/vLLM), OpenRouter | 24K ★ | Бесплатно |
-| **Cline** | VS Code / CLI | ✓ | ✓ | ✓ | MCP (создание MCP-серверов из чата) | Интегрирован в IDE | TypeScript | OpenRouter, Anthropic, OpenAI, AWS Bedrock, локальные (Ollama/LM Studio) | 61.5K ★ | Бесплатно |
-| **Aider** | CLI | ✓ | ✓ | ✓ | Нет | CLI, headless, watch-режим | Python | Claude, DeepSeek, OpenAI, локальные; Git-автокоммиты; голос | 44.5K ★ | Бесплатно |
-| **Continue** | VS Code / JetBrains / CLI | ✓ | ✓ | ✓ | MCP, агенты как Markdown-файлы | CLI-проверки в CI/CD | TypeScript | GitHub (статус-чеки на PR), любые LLM | 33K ★ | Бесплатно |
-| **Roo Code** | VS Code | ✓ | ✓ | ✓ | MCP, Custom Modes | Интегрирован в IDE | TypeScript | Все основные провайдеры; поддержка русского в интерфейсе | 24K ★ | Бесплатно |
-| **LangChain** | Библиотека (Python/TS) | ✓ | ✓ | ✓ | MCP, Deep Agents | LangSmith (платный облачный мониторинг) | Python | Стандартные интерфейсы для LLM, эмбеддингов, векторных БД; LangGraph | 136K ★ | Бесплатно |
-| **CrewAI** | Библиотека / CLI | ✓ | ✓ | ✓ | MCP | Crews (автономные) + Flows (event-driven) | Python | Multi-agent оркестрация | 51K ★ | Бесплатно |
-| **AutoGPT** | Платформа / CLI / Web | ✓ | ✓ | ✓ | Частично | Self-hosted + Cloud beta | Python | Agent Builder, Marketplace | 184K ★ | Бесплатно |
-| **MetaGPT** | CLI | ✓ | ✓ | ✓ | Нет | CLI / HuggingFace Space | Python | Роли PM, архитектора, инженера в одной системе | 68K ★ | Бесплатно |
-| **Pi-agent** | CLI (TUI) / RPC / SDK | ✓ (WSL2) | ✓ | ✓ | Extensions + Skills (**нет MCP**) | RPC (stdin/stdout JSONL), SDK | TypeScript | 25+ провайдеров; Anthropic Pro/Max, ChatGPT Plus/Pro, Copilot; tmux, контейнеры | 45.8K ★ | Бесплатно (MIT) |
-| **OpenClaw** | CLI (TUI) / Gateway + Web UI / iOS + Android / Desktop | ✓ (WSL2), Docker | ✓ | ✓ | **MCP** (через bundle-плагины) + native-плагины + Skills (ClawHub) | Gateway/клиент (WebSocket) + iOS/Android nodes | TypeScript | 23+ каналов (WhatsApp, Telegram, Slack, Discord, Signal, iMessage, Matrix и др.); pi-agent SDK; Docker/SSH sandboxes | 369K ★ | Бесплатно (MIT) |
-
-**Примечание:** Pi-agent (badlogic/pi-mono) — минималистичный terminal-based harness для LLM-агентов. Философия: «адаптируй pi под себя, а не наоборот». Расширяем через Extensions/Skills/Packages. 4 режима: интерактивный TUI, Print/JSON, RPC, SDK. Имеет собственный TUI-движок (`@mariozechner/pi-tui`), используемый в том числе OpenCode и OpenClaw. MCP не поддерживает принципиально — сообщество строит нужное через extensions.
-
-**Примечание:** OpenClaw (openclaw/openclaw) — не чисто кодинг-агент, а персональный AI-ассистент с мультиканальным Gateway. Агентный движок построен на Pi-agent SDK. Сыграл ключевую роль в популяризации TUI среди массовой аудитории (369K ★) и повлиял на архитектуру последующих кодинг-агентов. Skills-система ClawHub — 5400+ навыков. Плагины совместимы с форматами Codex/Claude/Cursor.
-
-### 3.2. Проприетарные
-
-| Инструмент | Вендор | Интерфейс | Windows | macOS | Linux | MCP | Клиент-сервер | Особенности | Цена |
+| Инструмент | Интерфейс | Каналы | Память | Self-host | MCP | Самообучение | Язык | GitHub | Цена |
 |---|---|---|---|---|---|---|---|---|---|
-| **Claude Code** | Anthropic (США) | CLI / IDE / Desktop / Web | ✓ | ✓ | ✓ | Да, Skills, Hooks | Headless, Remote Control, GitHub Actions | Автономная работа с кодом и PR; худшая доступность в РФ (нужен и VPN, и иностранная карта) | $20–200/мес |
-| **Codex** | OpenAI (США) | Desktop (macOS/Win) / VS Code / CLI / Web | ✓ | ✓ | ✓ | Да, Skills, Plugins | Cloud-агенты, worktrees, remote devbox | Десктоп-приложение + web в ChatGPT; computer use; параллельные агенты; 90+ плагинов | В подписке ChatGPT ($20–200/мес) |
-| **Claude Cowork** | Anthropic (США) | Desktop GUI / Web | ✓ | ✓ | — | Плагины (Google Drive, Docusign) | Десктоп + Web | Автономные задачи для нетехнических пользователей; доступ к файловой системе | В подписке |
-| **GitHub Copilot** | Microsoft (США) | VS Code / JetBrains / Xcode / CLI / Web | ✓ | ✓ | ✓ | MCP, Copilot Spaces | Облачные агенты, CLI | Самый распространённый AI-инструмент; Copilot, Claude, Codex — модель на выбор | Free–$39/мес |
-| **Cursor** | Anysphere (США) | AI IDE / CLI / Slack | ✓ | ✓ | ✓ | MCP, Rules | IDE + Cloud Agents | Composer 2; Tab-модель сверхточного автодополнения; 50%+ Fortune 500 | Free–$40/мес |
-| **Windsurf** | Cognition AI (США) | AI IDE / JetBrains | ✓ | ✓ | ✓ | MCP, Cascade | Cascade (локальный агент) + Devin (облачный) | Первый «agentic IDE»; Agent Command Center — канбан для агентов | Free–$15/мес |
-| **Antigravity** | **Google** (США) | Desktop (Electron) | ✓ | ✓ | ✓ | Cloud Code endpoint | Облачный (Google Cloud) | Регионально ограничен; сообщество создало `open-antigravity-patcher` (GPL 3.0) для РФ | Freemium |
-| **Cody** | Sourcegraph (США) | VS Code / JetBrains / VS / Web / CLI | ✓ | ✓ | ✓ | MCP | Sourcegraph Enterprise (сервер) | Глубокое понимание кодовой базы через Search API | Freemium |
+| **OpenClaw** | CLI (TUI) / Gateway + Web UI / iOS + Android / Desktop | 24+ (WhatsApp, Telegram, Slack, Discord, Signal, iMessage, Matrix и др.) | Config-файлы, context engine | Да (Docker/локально) | Да (bundle-плагины) | Частично | TypeScript | 369K ★ | Бесплатно (MIT) |
+| **Hermes Agent** | CLI (TUI) / Gateway / Web UI | Telegram, Discord, Slack, WhatsApp, Signal, Email, CLI | MEMORY.md, USER.md, FTS5 поиск | Да (Python/VPS) | Да | **Да** (auto-skills) | Python + TS | 104K ★ | Бесплатно (MIT) |
+| **Moltis** | Web UI / CLI | Telegram, WhatsApp, Discord, Slack, Matrix, Nostr, Teams | SQLite + FTS + vector | Да (single binary, Rust) | Да | Нет | Rust | — | Бесплатно |
+| **Leon** | Web UI / CLI | Web, голос | Layered memory | Да (Node.js) | Нет | Нет | TS + Python | 17K ★ | Бесплатно (MIT) |
+| **OpenAkita** | GUI / CLI | Telegram, Feishu, WeCom, DingTalk, QQ | Daily health-check | Да (Python) | Да | Да (self-taught skills) | Python + TS + Rust | 1.7K ★ | Бесплатно (Apache 2.0) |
 
-### 3.3. Российские агентные инструменты
+**Примечание:** OpenClaw — не кодинг-агент, а персональный AI-ассистент с мультиканальным Gateway. Агентный движок на Pi-agent SDK. Skills-система ClawHub — 5400+ навыков.
+
+**Примечание:** Hermes Agent (Nous Research) — самообучающийся агент с persistent memory. Создаёт reusable skills из опыта, встроенный cron-планировщик, субагенты, браузерная автоматизация. 18+ LLM-провайдеров.
+
+### 3.2. Кодинг-агенты (open-source)
+
+| Инструмент | Тип клиента | Интерфейс | Windows | macOS | Linux | Плагины/MCP | GitHub | Цена |
+|---|---|---|---|---|---|---|---|---|
+| **OpenCode** | Отдельный | CLI / Desktop / IDE / Web | ✓ | ✓ | ✓ | MCP, плагины | 150K ★ | Бесплатно |
+| **Cline** | Встройка | VS Code / CLI | ✓ | ✓ | ✓ | MCP (создание из чата) | 61.5K ★ | Бесплатно |
+| **Pi-agent** | Отдельный | CLI (TUI) / RPC / SDK | ✓ (WSL2) | ✓ | ✓ | Extensions + Skills (**нет MCP**) | 45.8K ★ | Бесплатно (MIT) |
+| **Aider** | Отдельный | CLI | ✓ | ✓ | ✓ | Нет | 44.5K ★ | Бесплатно |
+| **Continue** | Встройка | VS Code / JetBrains / CLI | ✓ | ✓ | ✓ | MCP, агенты как Markdown | 33K ★ | Бесплатно |
+| **Qwen Code** | Отдельный | CLI / VS Code / JetBrains / Zed | ✓ | ✓ | ✓ | MCP, Skills, SubAgents | 24K ★ | Бесплатно |
+| **Roo Code** | Встройка | VS Code | ✓ | ✓ | ✓ | MCP, Custom Modes | 24K ★ | Бесплатно |
+| **LangChain** | Фреймворк | Библиотека (Python/TS) | ✓ | ✓ | ✓ | MCP, Deep Agents | 136K ★ | Бесплатно |
+| **CrewAI** | Фреймворк | Библиотека / CLI | ✓ | ✓ | ✓ | MCP | 51K ★ | Бесплатно |
+| **AutoGPT** | Отдельный | Платформа / CLI / Web | ✓ | ✓ | ✓ | Частично | 184K ★ | Бесплатно |
+| **MetaGPT** | Отдельный | CLI | ✓ | ✓ | ✓ | Нет | 68K ★ | Бесплатно |
+
+**Примечание:** Pi-agent — минималистичный terminal-based harness. Философия: «адаптируй pi под себя». 4 режима: TUI, Print/JSON, RPC, SDK. Собственный TUI-движок (`@mariozechner/pi-tui`). MCP не поддерживает принципиально.
+
+### 3.3. Кодинг-агенты (проприетарные)
+
+| Инструмент | Тип клиента | Вендор | Интерфейс | Windows | macOS | Linux | MCP | Особенности | Цена |
+|---|---|---|---|---|---|---|---|---|---|
+| **Codex** | Отдельный | OpenAI (США) | Desktop / VS Code / CLI / Web | ✓ | ✓ | ✓ | Да | Cloud-агенты, worktrees, computer use, 90+ плагинов | В подписке ChatGPT ($20–200/мес) |
+| **Claude Code** | Отдельный | Anthropic (США) | CLI / IDE / Desktop / Web | ✓ | ✓ | ✓ | Да | Автономная работа с кодом и PR; худшая доступность в РФ | $20–200/мес |
+| **Claude Cowork** | Отдельный | Anthropic (США) | Desktop GUI / Web | ✓ | ✓ | — | Плагины | Автономные задачи для нетехнических | В подписке |
+| **Cursor** | Отдельный | Anysphere (США) | AI IDE / CLI / Slack | ✓ | ✓ | ✓ | MCP | Composer 2; Tab-модель; 50%+ Fortune 500 | Free–$40/мес |
+| **GitHub Copilot** | Встройка | Microsoft (США) | VS Code / JetBrains / Xcode / CLI / Web | ✓ | ✓ | ✓ | MCP | Copilot, Claude, Codex — модель на выбор | Free–$39/мес |
+| **Windsurf** | Отдельный | Cognition AI (США) | AI IDE / JetBrains | ✓ | ✓ | ✓ | MCP | Cascade + Devin; Agent Command Center | Free–$15/мес |
+| **Antigravity** | Отдельный | **Google** (США) | Desktop (Electron) | ✓ | ✓ | ✓ | Cloud Code endpoint | Регионально ограничен; есть community patcher | Freemium |
+| **Cody** | Встройка | Sourcegraph (США) | VS Code / JetBrains / VS / Web / CLI | ✓ | ✓ | ✓ | MCP | Глубокое понимание кодовой базы | Freemium |
+
+### 3.4. Российские агентные инструменты
 
 Специализированных российских AI-агентов для работы с кодом по состоянию на май 2026 **не существует**. YandexGPT и GigaChat — LLM общего назначения, не agentic tools. Адаптация open-source решений (Cline, Aider, Qwen Code) с локальными или российскими API-провайдерами — основной путь для разработчиков в РФ.
 
@@ -136,46 +147,100 @@
 
 Поверх агентов выстраиваются целые экосистемы плагинов, скиллов и вспомогательных инструментов. Они добавляют агентам новые способности, управляют контекстом между сессиями, хранят долговременную память.
 
-### 4.1. Плагины, скиллы, MCP-серверы — экосистемы агентов
+### 4.1. Плагины и MCP-серверы
 
-Практически каждый крупный агент обзавёлся собственной системой расширений. Вот как это устроено у ключевых игроков:
+Плагины расширяют функциональность агента — дают доступ к файловой системе, базам данных, API, браузеру, терминалу. Без плагинов агент умеет только генерировать текст.
 
-| Агент | Формат плагинов/скиллов | Маркетплейс | MCP | Особенности |
+**MCP (Model Context Protocol)** стал универсальным стандартом подключения инструментов. Репозиторий `modelcontextprotocol/servers` — 85K звёзд, 10K форков, тысячи community-серверов. MCP работает через stdio или HTTP/SSE, позволяет подключить любой внешний инструмент без написания кода внутри самого агента.
+
+**Реестры MCP-серверов:**
+
+| Реестр | Кол-во серверов | Бесплатно | Платные | Особенности |
 |---|---|---|---|---|
-| **OpenClaw** | Native-плагины (`.openclaw.plugin.json`) + bundle-плагины (Codex/Claude/Cursor) + AgentSkills (SKILL.md) | **ClawHub** — 5400+ скиллов, 52.7K инструментов, 180K пользователей, 12M загрузок | Да (через bundle-плагины) | Крупнейший реестр скиллов; любой пользователь GitHub может опубликовать; категории: self-improving agent, security, GitHub, dashboard, soul и др. |
-| **Claude Code** | Плагины (`.claude-plugin/plugin.json`), скиллы (SKILL.md), хуки (9 событий) | Официальный Anthropic marketplace + приватные для команд | Да (через `.mcp.json`) | 13 официальных плагинов: code-review, feature-dev, plugin-dev, hookify, pr-review-toolkit и др. |
-| **Pi-agent** | Extensions (TypeScript-модули), Skills (SKILL.md), Pi Packages (npm) | Нет централизованного, npm-пакеты | Нет (принципиально) | Extensions регистрируют инструменты, команды, hotkeys, UI-компоненты, обработчики событий. Можно заменить встроенные инструменты, добавить sub-agents, plan mode, permission gates |
-| **OpenCode** | MCP-серверы, Custom Commands (Markdown), плагины | Нет (MCP-сообщество) | Да | MCP-серверы через stdio/SSE; 75+ LLM-провайдеров; LSP-автозагрузка |
-| **Cline** | MCP-серверы (создание из чата), AgentSkills (`.agents/skills/`), `.clinerules` | Нет (MCP-сообщество) | Да — **создаёт MCP-серверы из чата** | Уникальная фича: агент сам пишет и устанавливает новые MCP-серверы по текстовому описанию |
-| **Cursor** | `.cursor/rules`, `.cursor-plugin`, MCP | Нет | Да | AgentSkills |
-| **Windsurf** | `.windsurfrules`, MCP | Нет | Да | Ограничено |
+| **Smithery** (smithery.ai) | 1000+ | ✓ | ✓ | Крупнейший каталог, рейтинг, отзывы, one-click install |
+| **PulseMCP** (pulsemcp.com) | 500+ | ✓ | — | Полностью бесплатный, open-source каталог |
+| **MCPM** (mcpm.sh) | 300+ | ✓ | — | CLI-менеджер: установка, обновление, конфигурация MCP |
+| **mcp-get** (mcp-get.com) | 200+ | ✓ | — | npm-подобный менеджер: `npx mcp-get install <server>` |
 
-**MCP (Model Context Protocol)** стал универсальным стандартом подключения инструментов. Репозиторий `modelcontextprotocol/servers` — 85K звёзд, 10K форков, тысячи community-серверов. **AgentSkills (SKILL.md)** — стандарт для скиллов с YAML frontmatter + инструкциями; модель сама решает, когда активировать скилл. Наблюдается конвергенция форматов: OpenClaw поддерживает bundle-плагины Codex/Claude/Cursor, MCP принят всеми основными агентами, Skill-форматы совместимы между Pi, Claude Code, Cline, OpenClaw.
+**Нативные плагины vs MCP:** нативные плагины (`.openclaw.plugin.json`, `.claude-plugin/`) глубже интегрированы в агента, имеют доступ к хукам и внутренним событиям. MCP-серверы универсальны, но работают в изолированном процессе.
 
-### 4.2. Управление контекстом и долговременной памятью
+| Агент | Формат плагинов | MCP | Особенности |
+|---|---|---|---|
+| **OpenClaw** | Native (`.openclaw.plugin.json`) + bundle (Codex/Claude/Cursor) | Да (через bundle) | Крупнейшая экосистема; ClawHub — 5400+ скиллов, 52.7K инструментов |
+| **Claude Code** | `.claude-plugin/plugin.json` + хуки (9 событий) | Да (`.mcp.json`) | 13 официальных плагинов: code-review, feature-dev, pr-review-toolkit |
+| **Cline** | MCP (создание из чата) | Да | **Уникальная фича:** агент сам пишет и устанавливает MCP-серверы по текстовому описанию |
+| **Pi-agent** | Extensions (TypeScript-модули), Pi Packages (npm) | Нет (принципиально) | Extensions регистрируют инструменты, команды, hotkeys, UI-компоненты |
+| **OpenCode** | Custom Commands (Markdown), MCP | Да | MCP через stdio/SSE; 75+ LLM-провайдеров; LSP-автозагрузка |
+| **Cursor** | `.cursor/rules`, `.cursor-plugin` | Да | AgentSkills |
+| **Windsurf** | `.windsurfrules` | Да | Ограничено |
 
-Обычный агент «забывает» всё после завершения сессии. Инструменты памяти решают эту проблему — они сохраняют и извлекают релевантный контекст из прошлых взаимодействий.
+### 4.2. Скиллы (Skills)
 
-| Инструмент | Тип | Звёзд | Self-host | MCP | Язык | Особенности |
-|---|---|---|---|---|---|---|
-| **Mem0** | Open-source (Apache 2.0) + Cloud | 55K | Да (`pip install mem0ai` / Docker) | Да | Python, TypeScript | Multi-level memory (User/Session/Agent); v3 (апрель 2026): single-pass ADD-only экстракция, entity linking, multi-signal retrieval; бенчмарки 91.6 LoCoMo / 93.4 LongMemEval; встроен в OpenCode |
-| **Letta** (ex-MemGPT) | Open-source (Apache 2.0) + Cloud | 22.5K | Да (Docker) | Нет (REST API) | Python | Self-editing memory blocks + continual learning; агент сам обновляет память; архивная память + recall |
-| **LangMem** | Open-source (MIT) | 1.4K | Да (`pip install langmem`) | Нет | Python | Memory SDK для LangGraph; core memory API; background memory manager; интеграция с LangGraph Storage |
-| **Zep** | Проприетарное облако | 4.5K | ❌ (deprecated) | Да | Python, Go | Graph RAG + temporal knowledge graph (Graphiti); sub-200ms latency; SOC2/HIPAA |
+Скилл — это не код, а **инструкция + контекст**. Файл `SKILL.md` с YAML frontmatter описывает, что агент должен делать в определённой ситуации. Модель сама решает, когда активировать скилл, по ключевым словам и контексту задачи.
 
-### 4.3. Векторные базы данных как memory backend
+**Главное отличие от плагинов:** плагин добавляет новый инструмент (функцию, API-вызов), скилл добавляет новые знания и поведенческие паттерны. Скилл не требует программирования — это markdown-файл с инструкциями.
 
-Все memory-решения используют векторные БД для хранения и поиска. Самые популярные — все open-source с возможностью локального развёртывания:
+**Стандарт AgentSkills (SKILL.md)** — совместим между Pi, Claude Code, Cline, OpenClaw, OpenCode. YAML frontmatter содержит `name`, `description`, `triggers` — по ним модель определяет, какой скилл применить.
 
-| БД | Звёзд | Язык | Лицензия | Локально | Облако | Особенности |
-|---|---|---|---|---|---|---|
-| **Milvus** | 44.2K | Go + C++ | Apache 2.0 | Да (Docker/K8s, Milvus Lite) | Zilliz Cloud (free tier) | GPU acceleration, fully distributed, 10B+ векторов |
-| **Qdrant** | 31.1K | Rust | Apache 2.0 | Да (Docker / in-memory) | Qdrant Cloud (free tier) | Квантование векторов (экономия RAM до 97%); фильтрация по payload |
-| **ChromaDB** | 27.8K | Rust + Python | Apache 2.0 | Да (embedded / Docker) | Chroma Cloud | API из 4 функций; встроена в Mem0 по умолчанию |
-| **Weaviate** | 16.1K | Go | BSD-3 | Да (Docker) | Weaviate Cloud | Гибридный поиск, RAG, реранкинг, мультиарендность |
-| **Pinecone** | — | — | Проприетарная | ❌ (cloud only) | Pinecone Cloud | Serverless, SOC2/HIPAA |
+**Реестры скиллов:**
 
-### 4.4. Доступность из России и рекомендации
+| Реестр | Кол-во | Агент | Доступ |
+|---|---|---|---|
+| **ClawHub** (clawhub.ai) | 5400+ скиллов, 52.7K инструментов | OpenClaw | Открытый, любой пользователь GitHub может опубликовать |
+| **Anthropic Marketplace** | 13 официальных + приватные для команд | Claude Code | Официальный + приватные маркетплейсы |
+| **Community Skills** | Сотни в репозиториях | Cline, Pi-agent, OpenCode | GitHub, `.agents/skills/` |
+
+**Конвергенция форматов:** OpenClaw поддерживает bundle-плагины Codex/Claude/Cursor, SKILL.md работает в 5+ агентах, MCP принят всеми основными игроками. Экосистема движется к единому стандарту.
+
+### 4.3. Контекст-файлы
+
+Помимо плагинов и скиллов, поведение агента задаётся через markdown-файлы в корневой директории проекта. Это самый простой способ «настроить» агента без единой строчки кода:
+
+| Файл | Назначение | Где используется |
+|---|---|---|
+| **AGENTS.md** | Общие инструкции для всех агентов в проекте | OpenClaw, Cline, Codex, Cursor |
+| **SOUL.md** | Личность, стиль общения, ценности агента | OpenClaw, Hermes Agent, Vellum |
+| **TOOLS.md** | Описание доступных инструментов и когда их применять | OpenClaw |
+| **USER.md** | Профиль пользователя: предпочтения, стиль, проекты | Hermes Agent, OpenClaw |
+| **MEMORY.md** | Долговременная память агента | Hermes Agent |
+| **.clinerules** | Правила поведения для Cline | Cline |
+| **.cursorrules** | Правила поведения для Cursor | Cursor |
+| **.windsurfrules** | Правила поведения для Windsurf | Windsurf |
+| **.codex/environments** | Окружения и конфигурации для Codex | Codex |
+
+Эти файлы автоматически подхватываются агентом при старте сессии и инжектируются в системный промпт. Их можно версионировать в Git, шарить между проектами и командами.
+
+### 4.4. Память агентов
+
+Обычный агент «забывает» всё после завершения сессии. Memory-решения сохраняют и извлекают релевантный контекст из прошлых взаимодействий.
+
+**Типы памяти:**
+- **Session memory** — контекст внутри одной сессии (есть у всех агентов)
+- **Cross-session memory** — предпочтения, факты, стиль пользователя между сессиями
+- **Long-term / archival memory** — архив с recall-механизмом для восстановления контекста
+
+| Решение | Тип | Звёзд | Self-host | MCP | Подключение | Цена | Особенности |
+|---|---|---|---|---|---|---|---|
+| **Mem0** | Open-source (Apache 2.0) + Cloud | 55K | Да (`pip install mem0ai` / Docker) | Да | Библиотека / Docker / Cloud | Бесплатно (self-host) / Cloud от $20/мес | Multi-level memory (User/Session/Agent); v3: single-pass ADD-only экстракция, entity linking, multi-signal retrieval; бенчмарки 91.6 LoCoMo / 93.4 LongMemEval |
+| **Letta** (ex-MemGPT) | Open-source (Apache 2.0) + Cloud | 22.5K | Да (Docker) | Нет (REST API) | Docker / Cloud | Бесплатно (self-host) / Cloud от $25/мес | Self-editing memory blocks; агент сам обновляет память; архивная память + recall |
+| **LangMem** | Open-source (MIT) | 1.4K | Да (`pip install langmem`) | Нет | Библиотека | Бесплатно | Memory SDK для LangGraph; core memory API; background memory manager |
+| **Zep** | Проприетарное облако | 4.5K | ❌ (deprecated) | Да | Cloud only | От $49/мес | Graph RAG + temporal knowledge graph (Graphiti); sub-200ms latency; SOC2/HIPAA |
+
+### 4.5. Векторные базы данных
+
+Все memory-решения опираются на векторные БД для хранения и поиска. Для продвинутых пользователей — возможность развернуть свой memory backend без готовых решений.
+
+| БД | Звёзд | Язык | Лицензия | Сложность | Локально | Облако | Особенности |
+|---|---|---|---|---|---|---|---|
+| **ChromaDB** | 27.8K | Rust + Python | Apache 2.0 | ★☆☆ (легко) | Да (embedded / Docker) | Chroma Cloud | API из 4 функций; встроена в Mem0 по умолчанию; `pip install chromadb` |
+| **Qdrant** | 31.1K | Rust | Apache 2.0 | ★★☆ (средне) | Да (Docker / in-memory) | Qdrant Cloud (free tier) | Квантование векторов (экономия RAM до 97%); фильтрация по payload |
+| **Milvus** | 44.2K | Go + C++ | Apache 2.0 | ★★★ (сложно) | Да (Docker/K8s, Milvus Lite) | Zilliz Cloud (free tier) | GPU acceleration, fully distributed, 10B+ векторов |
+| **Weaviate** | 16.1K | Go | BSD-3 | ★★☆ (средне) | Да (Docker) | Weaviate Cloud | Гибридный поиск, RAG, реранкинг, мультиарендность |
+| **Pinecone** | — | — | Проприетарная | ★☆☆ (легко) | ❌ (cloud only) | Pinecone Cloud | Serverless, SOC2/HIPAA; только API |
+
+**Когда нужна векторная БД:** если вы строите RAG-систему, работаете с большими документами, или хотите кастомную память агента с семантическим поиском. Для большинства пользователей достаточно Mem0 (self-hosted) с ChromaDB — это минимум кода и максимум результата.
+
+### 4.6. Доступность из России и рекомендации
 
 **Полностью локальные решения** (Pi-agent, Cline, Aider + Mem0 self-hosted + ChromaDB/Qdrant/Milvus локально + Ollama) — работают без VPN, без внешних API, без иностранных карт. Это полноценный офлайн-стек.
 
@@ -189,20 +254,39 @@
 
 ## 5. Инструменты для локального инференса
 
-| Инструмент | Тип | Платформы | Распределённый инференс | API-сервер | Форматы моделей | GPU-бэкенды | Ключевые особенности | Звёзды |
-|---|---|---|---|---|---|---|---|---|
-| **llama.cpp** | Open-source (C++) | Win, Lin, Mac, iOS, Android, RISC-V, Docker | ✓ Multi-GPU (tensor split) + **Multi-node через RPC** | OpenAI-совместимый (`llama-server`); embedding, reranking, параллельный декодинг | GGUF (конвертация из HF через `convert_hf_to_gguf.py`) | CUDA, Metal, Vulkan, SYCL, HIP (AMD), MUSA, CANN, OpenCL, ZenDNN, WebGPU | 200+ архитектур; квантование 1.5–8 бит; **чистый C++ без зависимостей**; CPU+GPU гибрид | 109K |
-| **Ollama** | Проприетарная обёртка | Win, Lin, Mac (Apple Silicon) | ✗ | OpenAI-совместимый; собственный API + Ollama Cloud | GGUF (llama.cpp под капотом) | CUDA, Metal | **Простейшая установка**: `curl ... | sh`; собственный реестр моделей; `ollama run llama3`; платный облачный уровень Pro/Max | 109K |
-| **vLLM** | Open-source (Python) | Linux (основная); NVIDIA/AMD/Intel/TPU/Ascend | ✓ Tensor/Pipeline/Data/Expert/Context parallelism; **Multi-node** | OpenAI-совместимый + Anthropic Messages API + gRPC | HF (PyTorch), GGUF, GPTQ/AWQ, FP8, INT4/8, NVFP4 | CUDA, ROCm, Intel Gaudi, Google TPU, Huawei Ascend, Apple Silicon | PagedAttention; 200+ архитектур; continuous batching; максимальная пропускная способность; `pip install vllm` | 79.3K |
-| **LM Studio** | Проприетарное (GUI) | Win, Lin, Mac (Apple Silicon) | LM Link — удалённые инстансы (апрель 2026) | OpenAI-совместимый; JS/Python SDK; MCP-клиент; headless (`llmster`) | GGUF, MLX (Apple) | CUDA, Metal, Vulkan | **Десктопный GUI**; встроенный каталог моделей; самый простой старт для начинающих | — |
-| **GPT4All** | Open-source (C++/Python) | Win, Lin, Mac | ✗ | Docker-based, OpenAI-совместимый; Python API (`gpt4all`); интеграция с LangChain | GGUF (llama.cpp) | Vulkan (NVIDIA + AMD) | LocalDocs — приватный чат с документами; Python API: `from gpt4all import GPT4All` | 77.4K |
-| **TextGen (oobabooga)** | Open-source (Python) | Win, Lin, Mac (портабельные сборки) | ✓ Multi-GPU (tensor split + tensor parallelism) | OpenAI-совместимый + Anthropic-совместимый; MCP-сервер | GGUF, Transformers, ExLlamaV3, TensorRT-LLM | CUDA, Vulkan, ROCm | **Веб-интерфейс (Gradio)**; multimodal (vision); LoRA-тренировка; генерация изображений; TTS; 100% оффлайн | 47K |
-| **KoboldCpp** | Open-source (C++) | Win, Lin, Mac, **Android (Termux)**, RPi, Docker | Multi-GPU (Vulkan/CUDA) | Множественные endpoints (Kobold, OpenAI, Ollama, Whisper, TTS) | GGUF + GGML | CUDA, Vulkan | **Один исполняемый файл**; LLM + Image Gen + Video Gen + STT + TTS + Music Gen; KoboldAI Lite UI для ролевых игр | 10.4K |
-| **ExLlamaV2** | Open-source (Python/C++) | Win, Lin (только NVIDIA) | Multi-GPU через `--gpu_split` | TabbyAPI (OpenAI-совместимый), ExUI | GPTQ, EXL2 (2–8 бит, смешанное квантование) | CUDA (только NVIDIA) | Экстремально быстрый: 257 t/s на 4090; speculative decoding; заархивирован в пользу ExLlamaV3 | 4.5K |
-| **MLX** | Open-source (Apple) | Mac (Apple Silicon), Linux | Multi-device (CPU+GPU unified memory) | Python API (`mlx-lm`); finetuning (LoRA) | MLX, HF-конвертация, GGUF | Apple Silicon GPU (Metal) | **Разработан Apple**; NumPy-подобный Python API; lazy computation; autograd | 26K |
-| **llama.rn** | Open-source | **iOS (Metal), Android (OpenCL/NPU)** | ✗ (мобильные устройства) | React Native binding для llama.cpp | GGUF | Metal, OpenCL, Hexagon NPU | Нативный мобильный инференс; multimodal; tool calling | 931 |
+### 5.1. Движки инференса (backend)
 
-### 5.1. Российские инструменты для локального инференса
+| Инструмент | Тип | Платформы | Распределённый | API | Форматы | GPU | Ключевые особенности | Звёзды |
+|---|---|---|---|---|---|---|---|---|
+| **llama.cpp** | Open-source (C++) | Win, Lin, Mac, iOS, Android, RISC-V | ✓ Multi-GPU + **Multi-node RPC** | OpenAI-совместимый (`llama-server`) | GGUF | CUDA, Metal, Vulkan, SYCL, HIP, MUSA, CANN | 200+ архитектур; квантование 1.5–8 бит; **чистый C++**; CPU+GPU гибрид | 109K |
+| **Ollama** | Проприетарная обёртка | Win, Lin, Mac | ✗ | OpenAI-совместимый; Ollama Cloud | GGUF (llama.cpp) | CUDA, Metal | **Простейшая установка**: `ollama run llama3`; реестр моделей; платный Pro/Max | 109K |
+| **vLLM** | Open-source (Python) | Linux; NVIDIA/AMD/Intel/TPU/Ascend | ✓ Tensor/Pipeline/Data/Expert parallelism; **Multi-node** | OpenAI + Anthropic API + gRPC | HF, GGUF, GPTQ/AWQ, FP8, INT4/8 | CUDA, ROCm, Gaudi, TPU, Ascend | PagedAttention; 200+ архитектур; continuous batching; `pip install vllm` | 79.3K |
+| **SGLang** | Open-source (Python) | Linux; NVIDIA/AMD | ✓ Tensor parallelism; Multi-node | OpenAI-совместимый | HF, GGUF | CUDA, ROCm | **RadixAttention** — prefix caching 85-95% (RAG/multi-turn); **xGrammar** для структурированного JSON; на 29% быстрее vLLM на RAG-нагрузках | 18K |
+| **MLX** | Open-source (Apple) | Mac (Apple Silicon), Linux | Multi-device (CPU+GPU unified) | Python API (`mlx-lm`); finetuning (LoRA) | MLX, HF, GGUF | Apple Silicon GPU | **Разработан Apple**; NumPy-подобный API; lazy computation; autograd | 26K |
+| **ExLlamaV3** | Open-source (Python/C++) | Win, Lin (только NVIDIA) | Multi-GPU | TabbyAPI (OpenAI-совместимый) | GPTQ, EXL2, EXL3 (2–8 бит) | CUDA | Преемник ExLlamaV2; максимальная производительность на NVIDIA | 4.5K |
+| **TensorRT-LLM** | Open-source (NVIDIA) | Linux (только NVIDIA) | ✓ Tensor parallelism | OpenAI-совместимый | HF, TensorRT engine | CUDA (только NVIDIA) | **Максимальная пропускная способность** на H100/B200; FP4 inference; 28 мин компиляции на модель | 12K |
+
+### 5.2. Интерфейсы и платформы (frontend)
+
+| Инструмент | Тип | Платформы | Подключение | MCP | RAG | Ключевые особенности | Звёзды |
+|---|---|---|---|---|---|---|---|
+| **Open WebUI** | Open-source (Web) | Docker, K8s, pip | Ollama, OpenAI, Anthropic, vLLM, любой OpenAI-compatible | Да | ✓ (9 векторных БД, 15+ поисковых провайдеров) | **Де-факто стандарт** self-hosted; multi-user с RBAC; Python-функции/пайплайны; code execution; voice/video calls; генерация изображений; 290M+ загрузок | 137K |
+| **LM Studio** | Проприетарное (GUI) | Win, Lin, Mac | Встроенный (llama.cpp), Ollama, удалённые инстансы | Да (клиент) | ✗ | **Десктопный GUI**; встроенный каталог моделей; side-by-side сравнение; headless (`llmster`); бесплатный для коммерческого использования | — |
+| **TextGen (oobabooga)** | Open-source (Python) | Win, Lin, Mac | Встроенный (Transformers, llama.cpp, ExLlamaV3, TensorRT-LLM) | Да (сервер) | ✗ | **Веб-интерфейс (Gradio)**; multimodal; LoRA-тренировка; генерация изображений; TTS; 100% оффлайн | 47K |
+| **GPT4All** | Open-source (GUI) | Win, Lin, Mac | Встроенный (llama.cpp) | ✗ | ✓ (LocalDocs) | LocalDocs — чат с документами без интернета; Python API; Vulkan-ускорение (NVIDIA + AMD) | 77.4K |
+| **KoboldCpp** | Open-source (C++) | Win, Lin, Mac, **Android (Termux)**, RPi | Встроенный (llama.cpp) | ✗ | ✗ | **Один исполняемый файл**; LLM + Image Gen + Video Gen + STT + TTS + Music Gen; KoboldAI Lite UI | 10.4K |
+| **Jan** | Open-source (Desktop) | Win, Lin, Mac | Встроенный (llama.cpp, ONNX), облачные провайдеры | ✗ | ✗ | Приватный десктопный GUI; гибридный локальный/облачный режим; простой старт для non-tech | 82K |
+| **LocalAI** | Open-source (Go) | Docker, Linux, Mac | Встроенный (llama.cpp, stablediffusion, whisper) | ✗ | ✗ | **Drop-in замена OpenAI API**; текст + изображения (SD) + TTS + STT через один endpoint | 26K |
+
+**Когда что выбирать:**
+- **Просто запустить модель** → Ollama (`ollama run llama3`) или LM Studio (GUI)
+- **Максимум контроля** → llama.cpp напрямую (C++, квантование, все платформы)
+- **Продакшен с высокой нагрузкой** → vLLM (универсальный) или SGLang (RAG/multi-turn, структурированный вывод)
+- **Полноценная self-hosted платформа** → Open WebUI поверх Ollama/vLLM (multi-user, RAG, MCP, функции)
+- **Apple Silicon** → MLX (разработан Apple, нативная оптимизация)
+- **Максимум на NVIDIA** → TensorRT-LLM (H100/B200, FP4)
+
+### 5.3. Российские инструменты для локального инференса
 
 **Отсутствуют** как класс. Российские модели (GigaChat, Kandinsky) запускаются через стандартные международные инструменты (llama.cpp, vLLM). Из российских наработок:
 - **GGUF-квантизации GigaChat 3.1** — опубликованы ai-sage на Hugging Face. Загружаются и запускаются через llama.cpp / Ollama как обычные GGUF.
