@@ -13,6 +13,12 @@
     th, td { border: 1px solid #dfe2e5; padding: 6px 13px; }
     th { background: #f6f8fa; }
     tr:nth-child(even) { background: #f6f8fa; }
+    details { margin: 1rem 0; border: 1px solid #dfe2e5; border-radius: 6px; }
+    summary { cursor: pointer; padding: 0.75rem 1rem; background: #f6f8fa; font-weight: 600; user-select: none; }
+    summary:hover { background: #eaecef; }
+    details[open] summary { border-bottom: 1px solid #dfe2e5; }
+    details > table { margin: 0; border: none; }
+    details > table th, details > table td { border: 1px solid #dfe2e5; }
   </style>
 </head>
 <body>
