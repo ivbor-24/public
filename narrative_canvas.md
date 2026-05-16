@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: LLM в России — дорожная карта
 ---
 
