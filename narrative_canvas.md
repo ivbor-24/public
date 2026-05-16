@@ -39,21 +39,21 @@ title: LLM в России — дорожная карта
 
 Вы только знакомитесь с LLM. У вас нет ни API-ключа, ни желания разбираться с токенами и эндпоинтами. Нужна вкладка в браузере, куда можно написать вопрос и получить ответ. Благо, в 2026 году вариантов — море. Начнём с того, что доступно прямо здесь и сейчас, без обмазывания проксями и ВПНами, бесплатно, иногда с СМС.
 
-[**DeepSeek**](https://chat.deepseek.com/) — главный хит среди китайских чатов. Регистрация по email, с апреля - модель V4-Pro с контекстным окном в миллион токенов. Работает только с текстом и файлами, генерации изображений нет. Бесплатно.
+[<strong>DeepSeek</strong>](https://chat.deepseek.com/) — главный хит среди китайских чатов. Регистрация по email, с апреля - модель V4-Pro с контекстным окном в миллион токенов. Работает только с текстом и файлами, генерации изображений нет. Бесплатно.
 
-[**Qwen Chat**](https://chat.qwen.ai/) от Alibaba — если хочется мультимодальности. Генерация изображений? Встроена. Видеопонимание? Пожалуйста. Голосовой ввод? Есть. Qwen Studio позволяет переключаться между разными версиями моделей. Есть мостик к тем самым кодинг-агентам (о них позже) - кодинг-режим прямо из веб-интерфейса. С возможность подключения своего git-репо, с работой в git-образном окошке.
+[<strong>Qwen Chat</strong>](https://chat.qwen.ai/) от Alibaba — если хочется мультимодальности. Генерация изображений? Встроена. Видеопонимание? Пожалуйста. Голосовой ввод? Есть. Qwen Studio позволяет переключаться между разными версиями моделей. Есть мостик к тем самым кодинг-агентам (о них позже) - кодинг-режим прямо из веб-интерфейса. С возможность подключения своего git-репо, с работой в git-образном окошке.
 
-[**Kimi**](https://www.kimi.com/) от Moonshot AI навалил массу фич прямо в веб интерфейс. Тут и кодинг-окошко, и конструктор сайтов. И даже мечта офисного работника - автогенерация презенташек. Загрузил документ — получил готовый PPT.
+[<strong>Kimi</strong>](https://www.kimi.com/) от Moonshot AI навалил массу фич прямо в веб интерфейс. Тут и кодинг-окошко, и конструктор сайтов. И даже мечта офисного работника - автогенерация презенташек. Загрузил документ — получил готовый PPT.
 
-[**Doubao**](https://www.dola.com/chat/) (ByteDance) делает ставку на голосовой диалог — естественную речь, AI-персонажей, экосистему TikTok. Можно делать картинки, переводить тексть, выполнять домашку. Модно, молодежно, для неразвлекательных целей - малоприменимо.
+[<strong>Doubao</strong>](https://www.dola.com/chat/) (ByteDance) делает ставку на голосовой диалог — естественную речь, AI-персонажей, экосистему TikTok. Можно делать картинки, переводить тексть, выполнять домашку. Модно, молодежно, для неразвлекательных целей - малоприменимо.
 
-[**Ernie Bot**](https://ernie.baidu.com/) (Baidu) и [**Spark**](https://www.iflytek.com/en/products/ai/spark-ai.html) (iFlytek) — ещё два китайских товарища. Ernie щеголяет плагинами и интеграцией с поиском Baidu, Spark — лучшими в Китае голосовыми технологиями и мультяшными цифровыми аватарками. Для российского пользователя - не особо полезно.
+[<strong>Ernie Bot</strong>](https://ernie.baidu.com/) (Baidu) и [<strong>Spark</strong>](https://www.iflytek.com/en/products/ai/spark-ai.html) (iFlytek) — ещё два китайских товарища. Ernie щеголяет плагинами и интеграцией с поиском Baidu, Spark — лучшими в Китае голосовыми технологиями и мультяшными цифровыми аватарками. Для российского пользователя - не особо полезно.
 
-[**z.ai**](https://z.ai/) — Хороший базовый набор в веб-чате: генерация текстов, слайдов, таблиц, дашбордов, кода. Из России работает нестабильно, могут не работать некоторые функции. Годится в качестве тест-режима модельки GLM-5.1 перед покупкой API-ключа.
+[<strong>z.ai</strong>](https://z.ai/) — Хороший базовый набор в веб-чате: генерация текстов, слайдов, таблиц, дашбордов, кода. Из России работает нестабильно, могут не работать некоторые функции. Годится в качестве тест-режима модельки GLM-5.1 перед покупкой API-ключа.
 
-[**MiniMax**](https://agent.minimax.io/) — Комбайн в вебе: тут и "агенты", и "скиллы", и создание артефактов от табличек до видео. Фишка - режим "Эксперты": режим диалога с моделью системными промптами и MCP заточенной под конкретные задачи. Раньше много было бесплатно, теперь эти функции - в месячном "триале" перед базовой подпиской.
+[<strong>MiniMax</strong>](https://agent.minimax.io/) — Комбайн в вебе: тут и "агенты", и "скиллы", и создание артефактов от табличек до видео. Фишка - режим "Эксперты": режим диалога с моделью системными промптами и MCP заточенной под конкретные задачи. Раньше много было бесплатно, теперь эти функции - в месячном "триале" перед базовой подпиской.
 
-[**StepFun / 阶跃AI**](https://www.stepfun.com/) — Дипсик на минималках. Примечателен бешеным количеством рекламы: продвигают свой форк OpenClaw и API-подписку к нему.
+[<strong>StepFun / 阶跃AI</strong>](https://www.stepfun.com/) — Дипсик на минималках. Примечателен бешеным количеством рекламы: продвигают свой форк OpenClaw и API-подписку к нему.
 
 Все эти чаты доступны из России без VPN. Минус: часть требует китайский номер для регистрации.
 
@@ -78,7 +78,7 @@ title: LLM в России — дорожная карта
 </thead>
 <tbody>
 <tr>
-<td>**DeepSeek Chat**</td>
+<td><strong>DeepSeek Chat</strong></td>
 <td>DeepSeek</td>
 <td>КНР</td>
 <td>✓</td>
@@ -91,7 +91,7 @@ title: LLM в России — дорожная карта
 <td>V4-Pro с 1M токенов контекста; редкие обновления (V4 — апрель 2026); модель открыта (MIT)</td>
 </tr>
 <tr>
-<td>**Qwen Chat**</td>
+<td><strong>Qwen Chat</strong></td>
 <td>Alibaba</td>
 <td>КНР</td>
 <td>✓</td>
@@ -101,10 +101,10 @@ title: LLM в России — дорожная карта
 <td>✓</td>
 <td>✓</td>
 <td>✓</td>
-<td>Qwen Studio — переключение моделей (Qwen3.6-Plus и др.); встроенная генерация изображений (Qwen Image); **видеопонимание**; голосовой ввод; кодинг-режим с возможностью подключения репозитория</td>
+<td>Qwen Studio — переключение моделей (Qwen3.6-Plus и др.); встроенная генерация изображений (Qwen Image); <strong>видеопонимание</strong>; голосовой ввод; кодинг-режим с возможностью подключения репозитория</td>
 </tr>
 <tr>
-<td>**Kimi**</td>
+<td><strong>Kimi</strong></td>
 <td>Moonshot AI</td>
 <td>КНР</td>
 <td>✓</td>
@@ -114,10 +114,10 @@ title: LLM в России — дорожная карта
 <td>✗</td>
 <td>✓</td>
 <td>✓</td>
-<td>Сверхдлинный контекст (200K+ токенов); **встроенный генератор презентаций (PPT)**; Kimi+ — агенты для специализированных задач; кодинг-режим</td>
+<td>Сверхдлинный контекст (200K+ токенов); <strong>встроенный генератор презентаций (PPT)</strong>; Kimi+ — агенты для специализированных задач; кодинг-режим</td>
 </tr>
 <tr>
-<td>**Doubao**</td>
+<td><strong>Doubao</strong></td>
 <td>ByteDance</td>
 <td>КНР</td>
 <td>✓</td>
@@ -127,10 +127,10 @@ title: LLM в России — дорожная карта
 <td>✓</td>
 <td>✗</td>
 <td>✓</td>
-<td>**Голосовой диалог** — естественная речь; AI-персонажи; экосистема Douyin/TikTok</td>
+<td><strong>Голосовой диалог</strong> — естественная речь; AI-персонажи; экосистема Douyin/TikTok</td>
 </tr>
 <tr>
-<td>**Ernie Bot**</td>
+<td><strong>Ernie Bot</strong></td>
 <td>Baidu</td>
 <td>КНР</td>
 <td>✓</td>
@@ -143,7 +143,7 @@ title: LLM в России — дорожная карта
 <td>Плагины расширения; глубокая интеграция с поиском Baidu; ERNIE 4.5</td>
 </tr>
 <tr>
-<td>**Spark**</td>
+<td><strong>Spark</strong></td>
 <td>iFlytek</td>
 <td>КНР</td>
 <td>✓</td>
@@ -153,10 +153,10 @@ title: LLM в России — дорожная карта
 <td>✓</td>
 <td>✗</td>
 <td>✗</td>
-<td>**Лидер голосовых технологий** — распознавание и синтез речи; отраслевые ассистенты (медицина, право, образование)</td>
+<td><strong>Лидер голосовых технологий</strong> — распознавание и синтез речи; отраслевые ассистенты (медицина, право, образование)</td>
 </tr>
 <tr>
-<td>**YandexGPT**</td>
+<td><strong>YandexGPT</strong></td>
 <td>Яндекс</td>
 <td>РФ</td>
 <td>✓</td>
@@ -166,10 +166,10 @@ title: LLM в России — дорожная карта
 <td>✓</td>
 <td>✓</td>
 <td>✓</td>
-<td>Интеграция с сервисами Яндекса (почта, карты, музыка); **Яндекс 300** — реферат лонгрида, подкаста или длинного видео по ссылке; Алиса Про (голос, по Плюсу); Шедеврум для изображений</td>
+<td>Интеграция с сервисами Яндекса (почта, карты, музыка); <strong>Яндекс 300</strong> — реферат лонгрида, подкаста или длинного видео по ссылке; Алиса Про (голос, по Плюсу); Шедеврум для изображений</td>
 </tr>
 <tr>
-<td>**GigaChat**</td>
+<td><strong>GigaChat</strong></td>
 <td>Сбер</td>
 <td>РФ</td>
 <td>✓</td>
@@ -179,10 +179,10 @@ title: LLM в России — дорожная карта
 <td>Салют†</td>
 <td>✓</td>
 <td>✗</td>
-<td>**Kandinsky** — генерация изображений прямо в чате; экосистема Сбера (банк, умный дом); бесплатный тариф</td>
+<td><strong>Kandinsky</strong> — генерация изображений прямо в чате; экосистема Сбера (банк, умный дом); бесплатный тариф</td>
 </tr>
 <tr>
-<td>**z.ai**</td>
+<td><strong>z.ai</strong></td>
 <td>Zhipu AI</td>
 <td>КНР</td>
 <td>✓</td>
@@ -195,7 +195,7 @@ title: LLM в России — дорожная карта
 <td>GLM-5.1 (уровень флагманов); Agent mode с генерацией .docx/.pdf/.xlsx; 200K контекст; бесплатно</td>
 </tr>
 <tr>
-<td>**MiniMax**</td>
+<td><strong>MiniMax</strong></td>
 <td>MiniMax</td>
 <td>КНР</td>
 <td>✓</td>
@@ -208,7 +208,7 @@ title: LLM в России — дорожная карта
 <td>MiniMax-M1 — 1M контекст, open-weight; голосовой ввод/вывод; Agent mode; бесплатно без регистрации (ограниченный режим)</td>
 </tr>
 <tr>
-<td>**StepFun / 阶跃AI**</td>
+<td><strong>StepFun / 阶跃AI</strong></td>
 <td>StepFun</td>
 <td>КНР</td>
 <td>✓</td>
@@ -225,9 +225,9 @@ title: LLM в России — дорожная карта
 
 </details>
 
-**Российские решения** — варианта два и оба так себе: [**YandexGPT**](https://alice.yandex.ru/) aka **AlisaAI** и [**GigaChat**](https://giga.chat/). Отстают от флагманов западного моделестроения очень сильно. Для серьезной работы (по крайней мере, с текстами, картинками и видео) - почти не пригодны. Но плюcы, конечно есть. Русский язык для них родной. YandexGPT встроен в поиск Яндекса, в Алису, в сервис [**«Яндекс 300»**](https://300.ya.ru/) (гусары,молчать!) - краткий пересказ статей, подкастов и видео. GigaChat от Сбера умеет генерировать изображения (Kandinsky) прямо в чате. Оба работают без VPN, Яндекс еще и доступен при режиме "белых списков" (почти всегда), принимают российские карты для премиум-функций.
+<strong>Российские решения</strong> — варианта два и оба так себе: [<strong>YandexGPT</strong>](https://alice.yandex.ru/) aka <strong>AlisaAI</strong> и [<strong>GigaChat</strong>](https://giga.chat/). Отстают от флагманов западного моделестроения очень сильно. Для серьезной работы (по крайней мере, с текстами, картинками и видео) - почти не пригодны. Но плюcы, конечно есть. Русский язык для них родной. YandexGPT встроен в поиск Яндекса, в Алису, в сервис [<strong>«Яндекс 300»</strong>](https://300.ya.ru/) (гусары,молчать!) - краткий пересказ статей, подкастов и видео. GigaChat от Сбера умеет генерировать изображения (Kandinsky) прямо в чате. Оба работают без VPN, Яндекс еще и доступен при режиме "белых списков" (почти всегда), принимают российские карты для премиум-функций.
 
-А теперь — веб-чаты, которые без VPN **не открываются**: [ChatGPT](https://chatgpt.com/), [**Claude**](https://claude.ai/), [**Gemini**](https://gemini.google.com/app), [**Grok**](https://grok.com/), [**Perplexity**](https://www.perplexity.ai/), [**Mistral**](https://mistral.ai/), [**Microsoft Copilot**](https://copilot.microsoft.com/), запрещенная и экстремистская [**Meta AI**](https://www.meta.ai/). Это западные флагманы. У каждого — арсенал уникальных фич: Artifacts у Claude, Canvas и GPTs у ChatGPT, Perplexity с полным цитированием источников. Есть все, что и у web-реализаций из Поднебесной и с горкой. Но дверь заперта. Нужны VPN и, для платных подписок, иностранная карта. Досадно, но ладно.
+А теперь — веб-чаты, которые без VPN <strong>не открываются</strong>: [ChatGPT](https://chatgpt.com/), [<strong>Claude</strong>](https://claude.ai/), [<strong>Gemini</strong>](https://gemini.google.com/app), [<strong>Grok</strong>](https://grok.com/), [<strong>Perplexity</strong>](https://www.perplexity.ai/), [<strong>Mistral</strong>](https://mistral.ai/), [<strong>Microsoft Copilot</strong>](https://copilot.microsoft.com/), запрещенная и экстремистская [<strong>Meta AI</strong>](https://www.meta.ai/). Это западные флагманы. У каждого — арсенал уникальных фич: Artifacts у Claude, Canvas и GPTs у ChatGPT, Perplexity с полным цитированием источников. Есть все, что и у web-реализаций из Поднебесной и с горкой. Но дверь заперта. Нужны VPN и, для платных подписок, иностранная карта. Досадно, но ладно.
 
 <details>
 <summary> Таблица 1.2 Чат-боты, доступные с VPN </summary>
@@ -244,56 +244,56 @@ title: LLM в России — дорожная карта
 </thead>
 <tbody>
 <tr>
-<td>**ChatGPT**</td>
+<td><strong>ChatGPT</strong></td>
 <td>OpenAI (США)</td>
 <td>GPT-5.5, GPT-5.4</td>
-<td>Canvas (интерактивное редактирование текста/кода), DALL-E 3 (изображения), Sora (видео), **GPT-магазин** кастомных агентов, Deep Research, Code Interpreter, Projects</td>
+<td>Canvas (интерактивное редактирование текста/кода), DALL-E 3 (изображения), Sora (видео), <strong>GPT-магазин</strong> кастомных агентов, Deep Research, Code Interpreter, Projects</td>
 <td>$20–200/мес, нужна иностранная карта</td>
 </tr>
 <tr>
-<td>**Claude**</td>
+<td><strong>Claude</strong></td>
 <td>Anthropic (США)</td>
 <td>Opus 4.7, Sonnet 4.6, Haiku 4.5</td>
-<td>**Artifacts** — интерактивные мини-приложения прямо в чате; **Cowork** — автономное выполнение задач в десктоп-приложении; Projects; 1M контекст; Skills</td>
+<td><strong>Artifacts</strong> — интерактивные мини-приложения прямо в чате; <strong>Cowork</strong> — автономное выполнение задач в десктоп-приложении; Projects; 1M контекст; Skills</td>
 <td>$20–200/мес, нужна иностранная карта</td>
 </tr>
 <tr>
-<td>**Gemini**</td>
+<td><strong>Gemini</strong></td>
 <td>Google (США)</td>
 <td>Gemini 2.5 Pro/Flash</td>
-<td>**Deep Research**; Gems (кастомные ассистенты); Canvas; **глубокая интеграция** с Gmail, Docs, Drive, YouTube, Maps, Calendar; NotebookLM; Veo (видео)</td>
+<td><strong>Deep Research</strong>; Gems (кастомные ассистенты); Canvas; <strong>глубокая интеграция</strong> с Gmail, Docs, Drive, YouTube, Maps, Calendar; NotebookLM; Veo (видео)</td>
 <td>Бесплатно / Advanced $20/мес</td>
 </tr>
 <tr>
-<td>**Grok**</td>
+<td><strong>Grok</strong></td>
 <td>xAI (США)</td>
 <td>Grok 4, Grok 4.1</td>
-<td>Deep/Deeper Search; **Aurora** — генерация изображений; **интеграция с X (Twitter)** — анализ твитов; Big Brain; «Fun Mode» — менее фильтрованные ответы</td>
+<td>Deep/Deeper Search; <strong>Aurora</strong> — генерация изображений; <strong>интеграция с X (Twitter)</strong> — анализ твитов; Big Brain; «Fun Mode» — менее фильтрованные ответы</td>
 <td>Требуется X-аккаунт</td>
 </tr>
 <tr>
-<td>**Perplexity**</td>
+<td><strong>Perplexity</strong></td>
 <td>Perplexity AI (США)</td>
 <td>Sonar / GPT-5.5 / Claude / Grok</td>
-<td>**Pro Search** с уточняющими вопросами и полным цитированием; Pages — генератор статей; Spaces; Collections; Focus-режимы (Academic, Writing, Math)</td>
+<td><strong>Pro Search</strong> с уточняющими вопросами и полным цитированием; Pages — генератор статей; Spaces; Collections; Focus-режимы (Academic, Writing, Math)</td>
 <td>Бесплатно / Pro $20/мес</td>
 </tr>
 <tr>
-<td>**Mistral**</td>
+<td><strong>Mistral</strong></td>
 <td>Mistral AI (Франция)</td>
 <td>Mistral Large</td>
 <td>Le Chat Agents (настраиваемые); Canvas; Flux (генерация изображений); Code Interpreter</td>
 <td>Бесплатно / Pro / Team</td>
 </tr>
 <tr>
-<td>**Microsoft Copilot**</td>
+<td><strong>Microsoft Copilot</strong></td>
 <td>Microsoft (США)</td>
 <td>GPT-4.1/4.5</td>
 <td>DALL-E 3, Deep Research, Pages, интеграция с M365/Edge/Windows</td>
 <td>Бесплатно / Pro $20/мес</td>
 </tr>
 <tr>
-<td>**Meta AI**</td>
+<td><strong>Meta AI</strong></td>
 <td>Meta (запрещенная+экстремистская)</td>
 <td>Llama 4</td>
 <td>Интеграция с WhatsApp/Instagram/Facebook; Imagine (генерация изображений); голосовой режим</td>
@@ -308,12 +308,12 @@ title: LLM в России — дорожная карта
 
 ### Коготок (claw) застрял - всей птичке пропасть: связка Агент + API
 
-Вы распробовали чаты. Теперь хочется большего: чтобы нейросеть работала с кодом, файловой системой, терминалом. Чтобы сама коммитила в Git, открывала PR, запускала тесты. Сделала rm -rf /*, наконец. Для этого нужны две вещи: **агент**(к агентности в философском или daemon смысле не имеет никакого отношения, просто так повелось называть) - это софт, который оркестрирует взаимодействие и предоставляет инструметы расширяюшие или ограничивающие работу модели и **API-провайдер** - тот, кто поставляет доступ к самой LLM, развернутой на серверах китайских товарищей или буржуйских супостатов.
+Вы распробовали чаты. Теперь хочется большего: чтобы нейросеть работала с кодом, файловой системой, терминалом. Чтобы сама коммитила в Git, открывала PR, запускала тесты. Сделала rm -rf /*, наконец. Для этого нужны две вещи: <strong>агент</strong>(к агентности в философском или daemon смысле не имеет никакого отношения, просто так повелось называть) - это софт, который оркестрирует взаимодействие и предоставляет инструметы расширяюшие или ограничивающие работу модели и <strong>API-провайдер</strong> - тот, кто поставляет доступ к самой LLM, развернутой на серверах китайских товарищей или буржуйских супостатов.
 
 #### Поставщики «мозгов» бывают двух сортов
 
-**Вендоры** — разработчики моделей: [**OpenAI**](https://openai.com/api/), [**Anthropic**](https://platform.claude.com/docs/en/api/overview), [**Google**](https://aistudio.google.com/app/api-keys) (*бесплатные flash-модели по API!!!*), [**DeepSeek**](https://platform.deepseek.com/), [**Alibaba (Qwen)**](https://modelstudio.console.alibabacloud.com/), [**Z.ai API**](https://docs.z.ai/), [**MiMo (Xiaomi)**](https://platform.xiaomimimo.com/). У них прямой доступ к собственным моделям.
-**Агрегаторы** — посредники, собирающие модели от разных вендоров под одной крышей: [**OpenRouter**](https://openrouter.ai/) *есть бесплатный план*, [**DeepInfra**](https://deepinfra.com/deepstart), [**Together AI**](https://docs.together.ai/docs/api-keys-authentication), [**Groq**](https://console.groq.com/keys) *есть бесплатный план*, [**Fireworks AI**](https://docs.fireworks.ai/api-reference/introduction), [**OpenCode (Zen/Go)**](https://opencode.ai/) *есть бесплатный план*, [**Cerebras**](https://cloud.cerebras.ai/) *есть бесплатный план*. Список можно продолжать и продолжать, заканчивая помойками-однодневками от успешных васянов с ветхими стойками в древних ЦОДах. Отмечу, многие из агрегаторов не только продают доступ к общим инференс-инстансам, для солидных господ есть предложения о покупке отдельного инстанса или, натурально, выделенного вычислительного кластера для рассупонивания модельки.
+<strong>Вендоры</strong> — разработчики моделей: [<strong>OpenAI</strong>](https://openai.com/api/), [<strong>Anthropic</strong>](https://platform.claude.com/docs/en/api/overview), [<strong>Google</strong>](https://aistudio.google.com/app/api-keys) (<em>бесплатные flash-модели по API!!!</em>), [<strong>DeepSeek</strong>](https://platform.deepseek.com/), [<strong>Alibaba (Qwen)</strong>](https://modelstudio.console.alibabacloud.com/), [<strong>Z.ai API</strong>](https://docs.z.ai/), [<strong>MiMo (Xiaomi)</strong>](https://platform.xiaomimimo.com/). У них прямой доступ к собственным моделям.
+<strong>Агрегаторы</strong> — посредники, собирающие модели от разных вендоров под одной крышей: [<strong>OpenRouter</strong>](https://openrouter.ai/) <em>есть бесплатный план</em>, [<strong>DeepInfra</strong>](https://deepinfra.com/deepstart), [<strong>Together AI</strong>](https://docs.together.ai/docs/api-keys-authentication), [<strong>Groq</strong>](https://console.groq.com/keys) <em>есть бесплатный план</em>, [<strong>Fireworks AI</strong>](https://docs.fireworks.ai/api-reference/introduction), [<strong>OpenCode (Zen/Go)</strong>](https://opencode.ai/) <em>есть бесплатный план</em>, [<strong>Cerebras</strong>](https://cloud.cerebras.ai/) <em>есть бесплатный план</em>. Список можно продолжать и продолжать, заканчивая помойками-однодневками от успешных васянов с ветхими стойками в древних ЦОДах. Отмечу, многие из агрегаторов не только продают доступ к общим инференс-инстансам, для солидных господ есть предложения о покупке отдельного инстанса или, натурально, выделенного вычислительного кластера для рассупонивания модельки.
 
 
 <details>
@@ -332,7 +332,7 @@ title: LLM в России — дорожная карта
 </thead>
 <tbody>
 <tr>
-<td>**DeepSeek**</td>
+<td><strong>DeepSeek</strong></td>
 <td>Вендор</td>
 <td>✗</td>
 <td>Ограничена</td>
@@ -340,7 +340,7 @@ title: LLM в России — дорожная карта
 <td>UnionPay / PayPal (не РФ) / посредники</td>
 </tr>
 <tr>
-<td>**Qwen (Alibaba)**</td>
+<td><strong>Qwen (Alibaba)</strong></td>
 <td>Вендор</td>
 <td>✗</td>
 <td>Ограничена</td>
@@ -348,7 +348,7 @@ title: LLM в России — дорожная карта
 <td>Иностранная карта / бизнес-контракт / посредники</td>
 </tr>
 <tr>
-<td>**Moonshot/Kimi**</td>
+<td><strong>Moonshot/Kimi</strong></td>
 <td>Вендор</td>
 <td>✗</td>
 <td>Ограничена</td>
@@ -356,31 +356,31 @@ title: LLM в России — дорожная карта
 <td>Китайские платёжные системы</td>
 </tr>
 <tr>
-<td>**Z.ai**</td>
+<td><strong>Z.ai</strong></td>
 <td>Вендор</td>
 <td>✗</td>
 <td>Ограничена</td>
 <td>GLM-5.1, GLM-5, GLM-5-Turbo, GLM-4.7</td>
-<td>Иностранная карта / посредники (**есть free tier!**)</td>
+<td>Иностранная карта / посредники (<strong>есть free tier!</strong>)</td>
 </tr>
 <tr>
-<td>**Nvidia**</td>
-<td>**Вендор** (Nemotron + хостинг через NIM)</td>
+<td><strong>Nvidia</strong></td>
+<td><strong>Вендор</strong> (Nemotron + хостинг через NIM)</td>
 <td>✗</td>
 <td>Ограничена</td>
 <td>Nemotron 3 Nano Omni 30B-A3B (reasoning), DeepSeek V4 Pro, GLM-5.1, Gemma 4, Llama (затюненные варианты)</td>
-<td>Иностранная карта (**есть free tier!**)</td>
+<td>Иностранная карта (<strong>есть free tier!</strong>)</td>
 </tr>
 <tr>
-<td>**OpenRouter**</td>
-<td>**Агрегатор** (400+ моделей)</td>
+<td><strong>OpenRouter</strong></td>
+<td><strong>Агрегатор</strong> (400+ моделей)</td>
 <td>✗</td>
-<td>✅ **Крипта**</td>
+<td>✅ <strong>Крипта</strong></td>
 <td>GPT-5.5, Claude, Gemini, DeepSeek, Qwen, Kimi, GLM, Llama и др.</td>
-<td>**Криптовалюта (USDT/BTC)** — главное не светить свою страну( некоторые пользователи сообщают о блокировках)</td>
+<td><strong>Криптовалюта (USDT/BTC)</strong> — главное не светить свою страну( некоторые пользователи сообщают о блокировках)</td>
 </tr>
 <tr>
-<td>**DeepInfra**</td>
+<td><strong>DeepInfra</strong></td>
 <td>Агрегатор (100+ моделей)</td>
 <td>✗</td>
 <td>Ограничена</td>
@@ -388,7 +388,7 @@ title: LLM в России — дорожная карта
 <td>Иностранная карта</td>
 </tr>
 <tr>
-<td>**Together AI**</td>
+<td><strong>Together AI</strong></td>
 <td>Агрегатор (200+ моделей)</td>
 <td>✗</td>
 <td>Ограничена</td>
@@ -396,31 +396,31 @@ title: LLM в России — дорожная карта
 <td>Иностранная карта / Enterprise-инвойс</td>
 </tr>
 <tr>
-<td>**Groq**</td>
+<td><strong>Groq</strong></td>
 <td>Агрегатор (LPU-чипы)</td>
 <td>✗</td>
 <td>Ограничена</td>
 <td>Llama, Qwen, Mistral, DeepSeek (open-source)</td>
-<td>Иностранная карта (**есть free tier!**)</td>
+<td>Иностранная карта (<strong>есть free tier!</strong>)</td>
 </tr>
 <tr>
-<td>**Cerebras**</td>
+<td><strong>Cerebras</strong></td>
 <td>Агрегатор (CS-3 wafer-scale чипы)</td>
 <td>✗</td>
 <td>Ограничена</td>
 <td>GPT-OSS-120B, Llama 4 Scout/Maverick, Llama 3.3-70B, Qwen 3-235B (Thinking), GLM-4.7</td>
-<td>Иностранная карта (**есть free tier!**) — до 3 000 токенов/с</td>
+<td>Иностранная карта (<strong>есть free tier!</strong>) — до 3 000 токенов/с</td>
 </tr>
 <tr>
-<td>**OpenCode**</td>
-<td>**Агрегатор** (12+ моделей, агентно-оптимизированные)</td>
+<td><strong>OpenCode</strong></td>
+<td><strong>Агрегатор</strong> (12+ моделей, агентно-оптимизированные)</td>
 <td>✗</td>
 <td>Ограничена</td>
 <td>DeepSeek V4 Pro/Flash, Qwen3.6 Plus, Qwen3.5 Plus, Kimi K2.6, GLM-5.1, MiniMax M2.7, MiMo-V2.5-Pro</td>
-<td>**Zen**: pay-as-you-go ($20 пополнение, нулевая наценка, карта). **Go**: подписка $10/мес ($5 первый месяц)</td>
+<td><strong>Zen</strong>: pay-as-you-go ($20 пополнение, нулевая наценка, карта). <strong>Go</strong>: подписка $10/мес ($5 первый месяц)</td>
 </tr>
 <tr>
-<td>**Fireworks AI**</td>
+<td><strong>Fireworks AI</strong></td>
 <td>Агрегатор</td>
 <td>✗</td>
 <td>Ограничена</td>
@@ -428,7 +428,7 @@ title: LLM в России — дорожная карта
 <td>Иностранная карта</td>
 </tr>
 <tr>
-<td>**OpenAI**</td>
+<td><strong>OpenAI</strong></td>
 <td>Вендор</td>
 <td>✓</td>
 <td>Заблокирована</td>
@@ -436,7 +436,7 @@ title: LLM в России — дорожная карта
 <td>Только иностранная карта + VPN</td>
 </tr>
 <tr>
-<td>**Anthropic**</td>
+<td><strong>Anthropic</strong></td>
 <td>Вендор</td>
 <td>✓</td>
 <td>Заблокирована</td>
@@ -444,7 +444,7 @@ title: LLM в России — дорожная карта
 <td>Только иностранная карта + VPN</td>
 </tr>
 <tr>
-<td>**Google AI**</td>
+<td><strong>Google AI</strong></td>
 <td>Вендор</td>
 <td>✓</td>
 <td>Заблокирована</td>
@@ -452,26 +452,26 @@ title: LLM в России — дорожная карта
 <td>Только иностранная карта + VPN</td>
 </tr>
 <tr>
-<td>**YandexGPT**</td>
-<td>**Вендор (РФ)**</td>
+<td><strong>YandexGPT</strong></td>
+<td><strong>Вендор (РФ)</strong></td>
 <td>✗</td>
-<td>✅ **Полная**</td>
+<td>✅ <strong>Полная</strong></td>
 <td>YandexGPT Pro/Lite/Summarization, YandexART</td>
-<td>**Российские карты, Яндекс.Облако, счёт юрлицам**</td>
+<td><strong>Российские карты, Яндекс.Облако, счёт юрлицам</strong></td>
 </tr>
 <tr>
-<td>**GigaChat**</td>
-<td>**Вендор (РФ)**</td>
+<td><strong>GigaChat</strong></td>
+<td><strong>Вендор (РФ)</strong></td>
 <td>✗</td>
-<td>✅ **Полная**</td>
+<td>✅ <strong>Полная</strong></td>
 <td>GigaChat 2 Max/Pro/Lite, Kandinsky, Embeddings</td>
-<td>**Российские карты, Сбер ID, счёт юрлицам**</td>
+<td><strong>Российские карты, Сбер ID, счёт юрлицам</strong></td>
 </tr>
 <tr>
-<td>**MTS AI**</td>
-<td>**Вендор (РФ)**</td>
+<td><strong>MTS AI</strong></td>
+<td><strong>Вендор (РФ)</strong></td>
 <td>✗</td>
-<td>✅ **Полная**</td>
+<td>✅ <strong>Полная</strong></td>
 <td>MTS AI Chat/Vision</td>
 <td>Российские карты</td>
 </tr>
@@ -480,24 +480,24 @@ title: LLM в России — дорожная карта
 
 </details>
 
-Отдельного упоминания стоит **[nVidia](https://build.nvidia.com/nvidia)** - эти ребята производят не только лучшие GPU и NPU на сегодняшний день, они еще и файн-тюнят открытые модельки, предоставляют API и держат репозиторий открытых моделей (что это и зачем - дальше по тексту). Почти все провайдеры требуют иностранную карту. Но есть обходные пути: оформление иностранных карт, посредники с разнообразных платежных сервисов (тысячи их), старая добрая крипта.
+Отдельного упоминания стоит <strong>[nVidia](https://build.nvidia.com/nvidia)</strong> - эти ребята производят не только лучшие GPU и NPU на сегодняшний день, они еще и файн-тюнят открытые модельки, предоставляют API и держат репозиторий открытых моделей (что это и зачем - дальше по тексту). Почти все провайдеры требуют иностранную карту. Но есть обходные пути: оформление иностранных карт, посредники с разнообразных платежных сервисов (тысячи их), старая добрая крипта.
 
-Российские вендоры [**YandexGPT**](https://aistudio.yandex.ru/ru/model-gallery) и [**GigaChat**](https://developers.sber.ru/portal/products/gigachat-api) тоже предоставляют доступ к моделькам через API. Полная поддержка российских карт, данные на серверах в РФ. GigaChat даёт 1M токенов бесплатно при регистрации. Кто-то пользуется.
+Российские вендоры [<strong>YandexGPT</strong>](https://aistudio.yandex.ru/ru/model-gallery) и [<strong>GigaChat</strong>](https://developers.sber.ru/portal/products/gigachat-api) тоже предоставляют доступ к моделькам через API. Полная поддержка российских карт, данные на серверах в РФ. GigaChat даёт 1M токенов бесплатно при регистрации. Кто-то пользуется.
 
 #### Агенты: open-source и проприетарные
 
 Агент — это программа, которая превращает LLM из собеседника в деятеля. Агент читает код, пишет файлы, запускает команды, ищет в интернете, подключается к базам данных. Его принято ставить в Doker'ы, на виртуалки, на отдельные ПК (все любят MAC mini). На самом деле, если вы не кулхацкер, то для задач регулярной генерации текстов, создания скриптов для локальных автоматизаций, кодинга своего уютного сайтика - вполне можно разворачивать локально на машинке в юзер-директории (большинство агентов сами вам напомнят, что надо высовывать в сеть, а что нет, и в каких случаях). Так или иначе, все инструменты из нашего обзора делятся на три лагеря:
 
-**Open-source агенты:**
+<strong>Open-source агенты:</strong>
 
-[**OpenCode**](https://github.com/anomalyco/opencode) (150K ★) — CLI/Desktop/IDE/Web. TypeScript. Поддерживает 75+ провайдеров, включая локальные модели. Может работать в headless-режиме. Кроссплатформенный. Универсальный.
-[**Cline**](https://github.com/cline/cline) (61.5K ★) — расширение VS Code. MCP из коробки, умеет генерировать MCP-серверы прямо из чата. Подтверждение каждого действия (human-in-the-loop).
-[**Kilocode**](https://github.com/Kilo-Org/kilocode) (19K ★) — позиционируется как "инженерная платформа", кроссплатформенный, расширенный функции автоматизации/ выполнения циклических задач.
-[**Aider**](https://github.com/Aider-AI/aider) (44.5K ★) — CLI, Python. Фишка: Repomap — карта репозитория для навигации модели.
-[**Qwen Code**](https://github.com/QwenLM/qwen-code) (24K ★) — CLI от Alibaba. Заточен под семейство Qwen, но работает с любыми моделями. Поддержка Skills и SubAgents.
-[**Roo Code**](https://github.com/RooCodeInc/Roo-Code) (24K ★) — форк Cline с фокусом на кастомизацию режимов. Поддерживает русский язык в интерфейсе.
-**[LangChain](https://github.com/langchain-ai/langchain), [CrewAI](https://github.com/crewAIInc/crewAI), [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT), [MetaGPT](https://github.com/FoundationAgents/MetaGPT), [Qwen Agent](https://github.com/QwenLM/Qwen-Agent)** — фреймворки для построения собственных агентных систем. От библиотек до платформ с marketplace.
-[**Pi-agent**](https://github.com/earendil-works/pi) (45.8K ★) — минималистичный terminal-based harness от Mario Zechner. Философия: «адаптируй pi под себя, а не наоборот». Собственный TUI-движок. Не поддерживает MCP принципиально — всё необходимое строится через extensions. По сути — эталонный каркас для построения LLM-агентов: на его SDK построен, в частности, OpenClaw.
+[<strong>OpenCode</strong>](https://github.com/anomalyco/opencode) (150K ★) — CLI/Desktop/IDE/Web. TypeScript. Поддерживает 75+ провайдеров, включая локальные модели. Может работать в headless-режиме. Кроссплатформенный. Универсальный.
+[<strong>Cline</strong>](https://github.com/cline/cline) (61.5K ★) — расширение VS Code. MCP из коробки, умеет генерировать MCP-серверы прямо из чата. Подтверждение каждого действия (human-in-the-loop).
+[<strong>Kilocode</strong>](https://github.com/Kilo-Org/kilocode) (19K ★) — позиционируется как "инженерная платформа", кроссплатформенный, расширенный функции автоматизации/ выполнения циклических задач.
+[<strong>Aider</strong>](https://github.com/Aider-AI/aider) (44.5K ★) — CLI, Python. Фишка: Repomap — карта репозитория для навигации модели.
+[<strong>Qwen Code</strong>](https://github.com/QwenLM/qwen-code) (24K ★) — CLI от Alibaba. Заточен под семейство Qwen, но работает с любыми моделями. Поддержка Skills и SubAgents.
+[<strong>Roo Code</strong>](https://github.com/RooCodeInc/Roo-Code) (24K ★) — форк Cline с фокусом на кастомизацию режимов. Поддерживает русский язык в интерфейсе.
+<strong>[LangChain](https://github.com/langchain-ai/langchain), [CrewAI](https://github.com/crewAIInc/crewAI), [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT), [MetaGPT](https://github.com/FoundationAgents/MetaGPT), [Qwen Agent](https://github.com/QwenLM/Qwen-Agent)</strong> — фреймворки для построения собственных агентных систем. От библиотек до платформ с marketplace.
+[<strong>Pi-agent</strong>](https://github.com/earendil-works/pi) (45.8K ★) — минималистичный terminal-based harness от Mario Zechner. Философия: «адаптируй pi под себя, а не наоборот». Собственный TUI-движок. Не поддерживает MCP принципиально — всё необходимое строится через extensions. По сути — эталонный каркас для построения LLM-агентов: на его SDK построен, в частности, OpenClaw.
 
 <details>
 <summary> Таблица 2.2 Агенты с открытым кодом </summary>
@@ -521,7 +521,7 @@ title: LLM в России — дорожная карта
 </thead>
 <tbody>
 <tr>
-<td>**OpenCode**</td>
+<td><strong>OpenCode</strong></td>
 <td>Отдельный</td>
 <td>CLI / Desktop / IDE / Web</td>
 <td>✓</td>
@@ -535,7 +535,7 @@ title: LLM в России — дорожная карта
 <td>Бесплатно</td>
 </tr>
 <tr>
-<td>**Cline**</td>
+<td><strong>Cline</strong></td>
 <td>Встройка</td>
 <td>VS Code / CLI</td>
 <td>✓</td>
@@ -549,7 +549,7 @@ title: LLM в России — дорожная карта
 <td>Бесплатно</td>
 </tr>
 <tr>
-<td>**Pi-agent**</td>
+<td><strong>Pi-agent</strong></td>
 <td>Отдельный</td>
 <td>CLI (TUI) / RPC / SDK</td>
 <td>✓ (WSL2)</td>
@@ -563,7 +563,7 @@ title: LLM в России — дорожная карта
 <td>Бесплатно (MIT)</td>
 </tr>
 <tr>
-<td>**Aider**</td>
+<td><strong>Aider</strong></td>
 <td>Отдельный</td>
 <td>CLI</td>
 <td>✓</td>
@@ -577,7 +577,7 @@ title: LLM в России — дорожная карта
 <td>Бесплатно</td>
 </tr>
 <tr>
-<td>**Continue**</td>
+<td><strong>Continue</strong></td>
 <td>Встройка</td>
 <td>VS Code / JetBrains / CLI</td>
 <td>✓</td>
@@ -591,7 +591,7 @@ title: LLM в России — дорожная карта
 <td>Бесплатно</td>
 </tr>
 <tr>
-<td>**Qwen Code**</td>
+<td><strong>Qwen Code</strong></td>
 <td>Отдельный</td>
 <td>CLI / VS Code / JetBrains / Zed</td>
 <td>✓</td>
@@ -605,7 +605,7 @@ title: LLM в России — дорожная карта
 <td>Бесплатно</td>
 </tr>
 <tr>
-<td>**Roo Code**</td>
+<td><strong>Roo Code</strong></td>
 <td>Встройка</td>
 <td>VS Code</td>
 <td>✓</td>
@@ -619,7 +619,7 @@ title: LLM в России — дорожная карта
 <td>Бесплатно</td>
 </tr>
 <tr>
-<td>**LangChain**</td>
+<td><strong>LangChain</strong></td>
 <td>Фреймворк</td>
 <td>Библиотека (Python/TS)</td>
 <td>✓</td>
@@ -633,7 +633,7 @@ title: LLM в России — дорожная карта
 <td>Бесплатно</td>
 </tr>
 <tr>
-<td>**CrewAI**</td>
+<td><strong>CrewAI</strong></td>
 <td>Фреймворк</td>
 <td>Библиотека / CLI</td>
 <td>✓</td>
@@ -647,7 +647,7 @@ title: LLM в России — дорожная карта
 <td>Бесплатно</td>
 </tr>
 <tr>
-<td>**AutoGPT**</td>
+<td><strong>AutoGPT</strong></td>
 <td>Отдельный</td>
 <td>Платформа / CLI / Web</td>
 <td>✓</td>
@@ -661,7 +661,7 @@ title: LLM в России — дорожная карта
 <td>Бесплатно</td>
 </tr>
 <tr>
-<td>**MetaGPT**</td>
+<td><strong>MetaGPT</strong></td>
 <td>Отдельный</td>
 <td>CLI</td>
 <td>✓</td>
@@ -679,13 +679,13 @@ title: LLM в России — дорожная карта
 
 </details>
 
-**Проприетарные агенты:**
+<strong>Проприетарные агенты:</strong>
 
-**[Claude Code](https://claude.com/product/claude-code)** (Anthropic) — терминальный AI-разработчик. Автономная работа с кодом, коммиты, PR. Но: в РФ нужен и VPN, и иностранная карта. Худшая доступность.
-**[VS Code](https://code.visualstudio.com/)** — база. Минималистичный, расширяемый. Самый распространённый. **GitHub Copilot** - это по сути то же самое.
-**[Cursor](https://cursor.com/get-started)** — AI IDE (форк VS Code). Composer 2, сверхточное автодополнение, облачные агенты.
-**[Windsurf](https://www.windsurf.dev/)** — ещё один agentic IDE. Cascade (локальный агент) + Devin (облачный). Agent Command Center — канбан-доска для управления агентами.
-**[Antigravity](https://antigravity.google/)** (Google) — десктоп-приложение. Регионально ограничен, но сообщество поддерживает `open-antigravity-patcher` для обхода блокировок в РФ.
+<strong>[Claude Code](https://claude.com/product/claude-code)</strong> (Anthropic) — терминальный AI-разработчик. Автономная работа с кодом, коммиты, PR. Но: в РФ нужен и VPN, и иностранная карта. Худшая доступность.
+<strong>[VS Code](https://code.visualstudio.com/)</strong> — база. Минималистичный, расширяемый. Самый распространённый. <strong>GitHub Copilot</strong> - это по сути то же самое.
+<strong>[Cursor](https://cursor.com/get-started)</strong> — AI IDE (форк VS Code). Composer 2, сверхточное автодополнение, облачные агенты.
+<strong>[Windsurf](https://www.windsurf.dev/)</strong> — ещё один agentic IDE. Cascade (локальный агент) + Devin (облачный). Agent Command Center — канбан-доска для управления агентами.
+<strong>[Antigravity](https://antigravity.google/)</strong> (Google) — десктоп-приложение. Регионально ограничен, но сообщество поддерживает `open-antigravity-patcher` для обхода блокировок в РФ.
 
 <details>
 <summary> Таблица 2.3 Агенты с закрытым кодом </summary>
@@ -708,7 +708,7 @@ title: LLM в России — дорожная карта
 </thead>
 <tbody>
 <tr>
-<td>**Codex**</td>
+<td><strong>Codex</strong></td>
 <td>Отдельный</td>
 <td>OpenAI (США)</td>
 <td>Desktop / VS Code / CLI / Web</td>
@@ -721,7 +721,7 @@ title: LLM в России — дорожная карта
 <td>В подписке ChatGPT</td>
 </tr>
 <tr>
-<td>**Claude Code**</td>
+<td><strong>Claude Code</strong></td>
 <td>Отдельный</td>
 <td>Anthropic (США)</td>
 <td>CLI / IDE / Desktop / Web</td>
@@ -734,7 +734,7 @@ title: LLM в России — дорожная карта
 <td>$20–200/мес</td>
 </tr>
 <tr>
-<td>**Claude Cowork**</td>
+<td><strong>Claude Cowork</strong></td>
 <td>Отдельный</td>
 <td>Anthropic (США)</td>
 <td>Desktop GUI / Web</td>
@@ -747,7 +747,7 @@ title: LLM в России — дорожная карта
 <td>В подписке</td>
 </tr>
 <tr>
-<td>**GitHub Copilot**</td>
+<td><strong>GitHub Copilot</strong></td>
 <td>Встройка</td>
 <td>Microsoft (США)</td>
 <td>VS Code / JetBrains / Xcode / CLI / Web</td>
@@ -760,7 +760,7 @@ title: LLM в России — дорожная карта
 <td>Free–$39/мес</td>
 </tr>
 <tr>
-<td>**Cursor**</td>
+<td><strong>Cursor</strong></td>
 <td>Отдельный</td>
 <td>Anysphere (США)</td>
 <td>AI IDE / CLI / Slack</td>
@@ -773,7 +773,7 @@ title: LLM в России — дорожная карта
 <td>Free–$40/мес</td>
 </tr>
 <tr>
-<td>**Windsurf**</td>
+<td><strong>Windsurf</strong></td>
 <td>Отдельный</td>
 <td>Cognition AI (США)</td>
 <td>AI IDE / JetBrains</td>
@@ -786,7 +786,7 @@ title: LLM в России — дорожная карта
 <td>Free–$15/мес</td>
 </tr>
 <tr>
-<td>**Antigravity**</td>
+<td><strong>Antigravity</strong></td>
 <td>Отдельный</td>
 <td>Google (США)</td>
 <td>Desktop (Electron)</td>
@@ -799,7 +799,7 @@ title: LLM в России — дорожная карта
 <td>Freemium</td>
 </tr>
 <tr>
-<td>**Cody**</td>
+<td><strong>Cody</strong></td>
 <td>Встройка</td>
 <td>Sourcegraph (США)</td>
 <td>VS Code / JetBrains / VS / Web / CLI</td>
@@ -816,7 +816,7 @@ title: LLM в России — дорожная карта
 
 </details>
 
-**Агенты общего назначения** стоят особняком от кодинг-агентов. Это не встройка в IDE и не CLI-утилита для работы с репозиторием — это персональные ассистенты, которые живут на вашем сервере/локальной машине, помнят контекст между сессиями и доступны через Telegram, Discord, Slack и другие каналы.
+<strong>Агенты общего назначения</strong> стоят особняком от кодинг-агентов. Это не встройка в IDE и не CLI-утилита для работы с репозиторием — это персональные ассистенты, которые живут на вашем сервере/локальной машине, помнят контекст между сессиями и доступны через Telegram, Discord, Slack и другие каналы.
 
 <details>
 <summary> Таблица 2.4 Агенты общего назначения (ассистенты) </summary>
@@ -838,7 +838,7 @@ title: LLM в России — дорожная карта
 </thead>
 <tbody>
 <tr>
-<td>**OpenClaw**</td>
+<td><strong>OpenClaw</strong></td>
 <td>CLI (TUI) / Gateway + Web UI / iOS + Android</td>
 <td>24+ (WhatsApp, Telegram, Slack, Discord, Signal, iMessage)</td>
 <td>Config-файлы, context engine</td>
@@ -850,19 +850,19 @@ title: LLM в России — дорожная карта
 <td>Бесплатно (MIT)</td>
 </tr>
 <tr>
-<td>**Hermes Agent**</td>
+<td><strong>Hermes Agent</strong></td>
 <td>CLI (TUI) / Gateway / Web UI</td>
 <td>Telegram, Discord, Slack, WhatsApp, Signal, Email, CLI</td>
 <td>MEMORY.md, USER.md, FTS5 поиск</td>
 <td>Да (Python/VPS)</td>
 <td>Да</td>
-<td>**Да** (auto-skills)</td>
+<td><strong>Да</strong> (auto-skills)</td>
 <td>Python + TS</td>
 <td>104K ★</td>
 <td>Бесплатно (MIT)</td>
 </tr>
 <tr>
-<td>**Moltis**</td>
+<td><strong>Moltis</strong></td>
 <td>Web UI / CLI</td>
 <td>Telegram, WhatsApp, Discord, Slack, Matrix, Nostr, Teams</td>
 <td>SQLite + FTS + vector</td>
@@ -874,7 +874,7 @@ title: LLM в России — дорожная карта
 <td>Бесплатно</td>
 </tr>
 <tr>
-<td>**Leon**</td>
+<td><strong>Leon</strong></td>
 <td>Web UI / CLI</td>
 <td>Web, голос</td>
 <td>Layered memory</td>
@@ -886,7 +886,7 @@ title: LLM в России — дорожная карта
 <td>Бесплатно (MIT)</td>
 </tr>
 <tr>
-<td>**OpenAkita**</td>
+<td><strong>OpenAkita</strong></td>
 <td>GUI / CLI</td>
 <td>Telegram, Feishu, WeCom, DingTalk, QQ</td>
 <td>Daily health-check</td>
@@ -902,13 +902,13 @@ title: LLM в России — дорожная карта
 
 </details>
 
-**Важный нюанс:** почти все агенты — «агностики». Они не привязаны к конкретному вендору. Вы можете направить Cline на OpenRouter, Aider — на DeepSeek API, OpenCode — на локальную Ollama. Связка выбирается под задачу и бюджет. Исключения: Claude Code работает только с моделями Anthropic; Qwen Code оптимизирован под Qwen, но принимает и другие эндпоинты.
+<strong>Важный нюанс:</strong> почти все агенты — «агностики». Они не привязаны к конкретному вендору. Вы можете направить Cline на OpenRouter, Aider — на DeepSeek API, OpenCode — на локальную Ollama. Связка выбирается под задачу и бюджет. Исключения: Claude Code работает только с моделями Anthropic; Qwen Code оптимизирован под Qwen, но принимает и другие эндпоинты.
 
-**[OpenClaw](https://github.com/openclaw/openclaw)** (369K ★) — лидер среди ассистентов общего назначения (см. таблицу 2.4). Это не чисто кодинг-агент, а персональный AI-ассистент с мультиканальным Gateway (24+ каналов). Агентный движок построен на Pi-agent SDK. Влияние на экосистему колоссально: именно OpenClaw популяризировал TUI-интерфейс среди массовой аудитории, а его система навыков ClawHub (5400+ skills) задала стандарт для реестров агентных умений.
+<strong>[OpenClaw](https://github.com/openclaw/openclaw)</strong> (369K ★) — лидер среди ассистентов общего назначения (см. таблицу 2.4). Это не чисто кодинг-агент, а персональный AI-ассистент с мультиканальным Gateway (24+ каналов). Агентный движок построен на Pi-agent SDK. Влияние на экосистему колоссально: именно OpenClaw популяризировал TUI-интерфейс среди массовой аудитории, а его система навыков ClawHub (5400+ skills) задала стандарт для реестров агентных умений.
 
-**[Hermes Agent](https://github.com/nousresearch/hermes-agent)** (104K ★) — самообучающийся агент от Nous Research. Создаёт reusable skills из опыта, улучшает их в процессе работы. Встроенный cron-планировщик, субагенты, браузерная автоматизация. 18+ LLM-провайдеров.
+<strong>[Hermes Agent](https://github.com/nousresearch/hermes-agent)</strong> (104K ★) — самообучающийся агент от Nous Research. Создаёт reusable skills из опыта, улучшает их в процессе работы. Встроенный cron-планировщик, субагенты, браузерная автоматизация. 18+ LLM-провайдеров.
 
-Выбор агента — вопрос привычек (CLI/IDE/Web) и языка реализации. Выбор API — вопрос доступности, цены и качества модели для конкретной задачи. Специализированных российских AI-агентов для работы с кодом по состоянию на май 2026 **не существует**. YandexGPT и GigaChat — LLM общего назначения, не agentic tools. Адаптация open-source решений (Cline, Aider, Qwen Code) с локальными моделями или российскими API-провайдерами — основной путь для разработчиков и вайб-кодеров в РФ.
+Выбор агента — вопрос привычек (CLI/IDE/Web) и языка реализации. Выбор API — вопрос доступности, цены и качества модели для конкретной задачи. Специализированных российских AI-агентов для работы с кодом по состоянию на май 2026 <strong>не существует</strong>. YandexGPT и GigaChat — LLM общего назначения, не agentic tools. Адаптация open-source решений (Cline, Aider, Qwen Code) с локальными моделями или российскими API-провайдерами — основной путь для разработчиков и вайб-кодеров в РФ.
 
 ---
 
@@ -922,15 +922,15 @@ title: LLM в России — дорожная карта
 
 Плагины расширяют функциональность агента — дают доступ к файловой системе, базам данных, API, браузеру, терминалу. Без плагинов агент умеет только генерировать текст.
 
-**MCP (Model Context Protocol)** стал универсальным стандартом подключения инструментов. Репозиторий `modelcontextprotocol/servers` — 85K звёзд, 10K форков, тысячи community-серверов. MCP работает через stdio или HTTP/SSE, позволяет подключить любой внешний инструмент без написания кода внутри самого агента.
+<strong>MCP (Model Context Protocol)</strong> стал универсальным стандартом подключения инструментов. Репозиторий `modelcontextprotocol/servers` — 85K звёзд, 10K форков, тысячи community-серверов. MCP работает через stdio или HTTP/SSE, позволяет подключить любой внешний инструмент без написания кода внутри самого агента.
 
-Самый раздутый маркетплейс — **[ClawHub](https://clawhub.ai/)** у OpenClaw. 5400+ скиллов, 52 тысячи инструментов, 180 тысяч пользователей, 12 миллионов загрузок. У **Claude Code** — [официальный маркетплейс от Anthropic](https://code.claude.com/docs/en/discover-plugins) — 13 официальных плагинов. **Cline** — агент сам создаёт MCP-серверы из чата.
+Самый раздутый маркетплейс — <strong>[ClawHub](https://clawhub.ai/)</strong> у OpenClaw. 5400+ скиллов, 52 тысячи инструментов, 180 тысяч пользователей, 12 миллионов загрузок. У <strong>Claude Code</strong> — [официальный маркетплейс от Anthropic](https://code.claude.com/docs/en/discover-plugins) — 13 официальных плагинов. <strong>Cline</strong> — агент сам создаёт MCP-серверы из чата.
 
-Реестры MCP-серверов: **[Smithery](https://smithery.ai/)** — Большой пул MCP общего назначения: поисковые, аналитика по блокчейнам, астрологические прогнозы. Бесплатно 50 000 вызовов в месяц.
+Реестры MCP-серверов: <strong>[Smithery](https://smithery.ai/)</strong> — Большой пул MCP общего назначения: поисковые, аналитика по блокчейнам, астрологические прогнозы. Бесплатно 50 000 вызовов в месяц.
 
-, **[PulseMCP](https://pulsemcp.com/)** — Агрегатор MCP - сам доступ не раздает. Все серверы свалены в кучу, не для всех опубликованы эндпоинты (т.е. нашел какой-то MCP - идешь к провайдеру и смотришь как привязаться).
+, <strong>[PulseMCP](https://pulsemcp.com/)</strong> — Агрегатор MCP - сам доступ не раздает. Все серверы свалены в кучу, не для всех опубликованы эндпоинты (т.е. нашел какой-то MCP - идешь к провайдеру и смотришь как привязаться).
 
-, **[MCPM](https://mcpm.sh/)** — Фишка - есть свой "MCP Manager". Инструмент интегрируется с "ассистентами" и "кодинг-агентами" позволяет искать и настраивать MCP без походов по сайтам и репозиториям.
+, <strong>[MCPM](https://mcpm.sh/)</strong> — Фишка - есть свой "MCP Manager". Инструмент интегрируется с "ассистентами" и "кодинг-агентами" позволяет искать и настраивать MCP без походов по сайтам и репозиториям.
 
 
 .
@@ -949,43 +949,43 @@ title: LLM в России — дорожная карта
 </thead>
 <tbody>
 <tr>
-<td>**OpenClaw**</td>
+<td><strong>OpenClaw</strong></td>
 <td>Native (`.openclaw.plugin.json`) + bundle (Codex/Claude/Cursor)</td>
 <td>Да (через bundle)</td>
 <td>Крупнейшая экосистема; ClawHub — 5400+ скиллов, 52.7K инструментов</td>
 </tr>
 <tr>
-<td>**Claude Code**</td>
+<td><strong>Claude Code</strong></td>
 <td>`.claude-plugin/plugin.json` + хуки (9 событий)</td>
 <td>Да (`.mcp.json`)</td>
 <td>13 официальных плагинов: code-review, feature-dev, pr-review-toolkit</td>
 </tr>
 <tr>
-<td>**Cline**</td>
+<td><strong>Cline</strong></td>
 <td>MCP (создание из чата)</td>
 <td>Да</td>
-<td>**Уникальная фича:** агент сам пишет и устанавливает MCP-серверы</td>
+<td><strong>Уникальная фича:</strong> агент сам пишет и устанавливает MCP-серверы</td>
 </tr>
 <tr>
-<td>**Pi-agent**</td>
+<td><strong>Pi-agent</strong></td>
 <td>Extensions (TypeScript), Pi Packages (npm)</td>
 <td>Нет (принципиально)</td>
 <td>Extensions регистрируют инструменты, команды, hotkeys, UI-компоненты</td>
 </tr>
 <tr>
-<td>**OpenCode**</td>
+<td><strong>OpenCode</strong></td>
 <td>Custom Commands (Markdown), MCP</td>
 <td>Да</td>
 <td>MCP через stdio/SSE; 75+ LLM-провайдеров; LSP-автозагрузка</td>
 </tr>
 <tr>
-<td>**Cursor**</td>
+<td><strong>Cursor</strong></td>
 <td>`.cursor/rules`, `.cursor-plugin`</td>
 <td>Да</td>
 <td>AgentSkills</td>
 </tr>
 <tr>
-<td>**Windsurf**</td>
+<td><strong>Windsurf</strong></td>
 <td>`.windsurfrules`</td>
 <td>Да</td>
 <td>Ограничено</td>
@@ -997,11 +997,11 @@ title: LLM в России — дорожная карта
 
 #### Скиллы (Skills)
 
-Скилл — это не код, а **инструкция + контекст**. Файл `SKILL.md` с YAML frontmatter описывает, что агент должен делать в определённой ситуации. Модель сама решает, когда активировать скилл.
+Скилл — это не код, а <strong>инструкция + контекст</strong>. Файл `SKILL.md` с YAML frontmatter описывает, что агент должен делать в определённой ситуации. Модель сама решает, когда активировать скилл.
 
-**Главное отличие от плагинов:** плагин добавляет новый инструмент (функцию, API-вызов), скилл добавляет новые знания и поведенческие паттерны. Скилл не требует программирования — это markdown-файл с инструкциями.
+<strong>Главное отличие от плагинов:</strong> плагин добавляет новый инструмент (функцию, API-вызов), скилл добавляет новые знания и поведенческие паттерны. Скилл не требует программирования — это markdown-файл с инструкциями.
 
-**Стандарт AgentSkills (SKILL.md)** — совместим между Pi, Claude Code, Cline, OpenClaw, OpenCode. YAML frontmatter содержит `name`, `description`, `triggers` — по ним модель определяет, какой скилл применить.
+<strong>Стандарт AgentSkills (SKILL.md)</strong> — совместим между Pi, Claude Code, Cline, OpenClaw, OpenCode. YAML frontmatter содержит `name`, `description`, `triggers` — по ним модель определяет, какой скилл применить.
 
 #### Контекст-файлы
 
@@ -1009,13 +1009,13 @@ title: LLM в России — дорожная карта
 
 | Файл | Назначение | Где используется |
 |---|---|---|
-| **AGENTS.md** | Общие инструкции для всех агентов в проекте | OpenClaw, Cline, Codex, Cursor и др. |
-| **SOUL.md** | Личность, стиль общения, ценности агента | OpenClaw, Hermes Agent |
-| **TOOLS.md** | Описание доступных инструментов | OpenClaw |
-| **USER.md** | Профиль пользователя: предпочтения, стиль | Hermes Agent, OpenClaw, и др. |
-| **MEMORY.md** | Долговременная память агента | Hermes Agent |
-| **.clinerules** | Правила поведения для Cline | Cline |
-| **.cursorrules** | Правила поведения для Cursor | Cursor |
+| <strong>AGENTS.md</strong> | Общие инструкции для всех агентов в проекте | OpenClaw, Cline, Codex, Cursor и др. |
+| <strong>SOUL.md</strong> | Личность, стиль общения, ценности агента | OpenClaw, Hermes Agent |
+| <strong>TOOLS.md</strong> | Описание доступных инструментов | OpenClaw |
+| <strong>USER.md</strong> | Профиль пользователя: предпочтения, стиль | Hermes Agent, OpenClaw, и др. |
+| <strong>MEMORY.md</strong> | Долговременная память агента | Hermes Agent |
+| <strong>.clinerules</strong> | Правила поведения для Cline | Cline |
+| <strong>.cursorrules</strong> | Правила поведения для Cursor | Cursor |
 
 Эти файлы автоматически подхватываются агентом при старте сессии и инжектируются в системный промпт. Их можно версионировать в Git.
 
@@ -1023,13 +1023,13 @@ title: LLM в России — дорожная карта
 
 Агент который знает и помнит все про вашу машину, про вас, про ваши привычки. Страшно... очень страшно... Но значительной части юзеров именно это и надо. Чтобы агент поддерживал стиль общения, помнил, над чем вы с ним работаете, дольше одной сессии.
 
-**Типы памяти:** session (внутри одной сессии), cross-session (предпочтения между сессиями), long-term / archival (архив с recall-механизмом).
+<strong>Типы памяти:</strong> session (внутри одной сессии), cross-session (предпочтения между сессиями), long-term / archival (архив с recall-механизмом).
 
-**[Mem0](https://mem0.ai/)** (55K ★, Apache 2.0) — де-факто стандарт. Алгоритм v3 (апрель 2026): single-pass ADD-only экстракция, entity linking, multi-signal retrieval. Бенчмарки: 91.6 на LoCoMo, 93.4 на LongMemEval. Self-hosted: `pip install mem0ai` или `docker compose up`.
+<strong>[Mem0](https://mem0.ai/)</strong> (55K ★, Apache 2.0) — де-факто стандарт. Алгоритм v3 (апрель 2026): single-pass ADD-only экстракция, entity linking, multi-signal retrieval. Бенчмарки: 91.6 на LoCoMo, 93.4 на LongMemEval. Self-hosted: `pip install mem0ai` или `docker compose up`.
 
-**[Letta](https://github.com/letta-ai/letta)** (ex-MemGPT, 22.5K ★) — self-editing memory: агент сам обновляет свою память. Архивная память + recall.
+<strong>[Letta](https://github.com/letta-ai/letta)</strong> (ex-MemGPT, 22.5K ★) — self-editing memory: агент сам обновляет свою память. Архивная память + recall.
 
-**[LangMem](https://github.com/langchain-ai/langmem)** (MIT) — Memory SDK для LangGraph-агентов.
+<strong>[LangMem](https://github.com/langchain-ai/langmem)</strong> (MIT) — Memory SDK для LangGraph-агентов.
 
 <details>
 <summary> Таблица 3.2 Сравнение готовых решений для организации памяти агента </summary>
@@ -1049,7 +1049,7 @@ title: LLM в России — дорожная карта
 </thead>
 <tbody>
 <tr>
-<td>**Mem0**</td>
+<td><strong>Mem0</strong></td>
 <td>Open-source (Apache 2.0) + Cloud</td>
 <td>55K</td>
 <td>Да (`pip install mem0ai` / Docker)</td>
@@ -1059,7 +1059,7 @@ title: LLM в России — дорожная карта
 <td>Multi-level memory; v3: single-pass ADD-only, entity linking; бенчмарки 91.6 LoCoMo</td>
 </tr>
 <tr>
-<td>**Letta** (ex-MemGPT)</td>
+<td><strong>Letta</strong> (ex-MemGPT)</td>
 <td>Open-source (Apache 2.0) + Cloud</td>
 <td>22.5K</td>
 <td>Да (Docker)</td>
@@ -1069,7 +1069,7 @@ title: LLM в России — дорожная карта
 <td>Self-editing memory blocks; агент сам обновляет память; архивная память + recall</td>
 </tr>
 <tr>
-<td>**LangMem**</td>
+<td><strong>LangMem</strong></td>
 <td>Open-source (MIT)</td>
 <td>1.4K</td>
 <td>Да (`pip install langmem`)</td>
@@ -1079,7 +1079,7 @@ title: LLM в России — дорожная карта
 <td>Memory SDK для LangGraph; core memory API; background memory manager</td>
 </tr>
 <tr>
-<td>**Zep**</td>
+<td><strong>Zep</strong></td>
 <td>Проприетарное облако</td>
 <td>4.5K</td>
 <td>❌ (deprecated)</td>
@@ -1097,7 +1097,7 @@ title: LLM в России — дорожная карта
 
 Любое memory-решение опирается на векторную БД. Для продвинутых пользователей — возможность развернуть свой memory backend без готовых решений.
 
-**[Milvus](https://milvus.io/)** (44K ★), **[Qdrant](https://qdrant.tech/)** (31K ★), **[ChromaDB](https://www.trychroma.com/)** (28K ★), **[Weaviate](https://weaviate.io/agentic-ai)** (16K ★) — все open-source, все разворачиваются локально в Docker, все бесплатны.
+<strong>[Milvus](https://milvus.io/)</strong> (44K ★), <strong>[Qdrant](https://qdrant.tech/)</strong> (31K ★), <strong>[ChromaDB](https://www.trychroma.com/)</strong> (28K ★), <strong>[Weaviate](https://weaviate.io/agentic-ai)</strong> (16K ★) — все open-source, все разворачиваются локально в Docker, все бесплатны.
 
 <details>
 <summary> Таблица 3.3 Векторные базы данных </summary>
@@ -1117,7 +1117,7 @@ title: LLM в России — дорожная карта
 </thead>
 <tbody>
 <tr>
-<td>**ChromaDB**</td>
+<td><strong>ChromaDB</strong></td>
 <td>27.8K</td>
 <td>Rust + Python</td>
 <td>Apache 2.0</td>
@@ -1127,7 +1127,7 @@ title: LLM в России — дорожная карта
 <td>API из 4 функций; встроена в Mem0 по умолчанию; `pip install chromadb`</td>
 </tr>
 <tr>
-<td>**Qdrant**</td>
+<td><strong>Qdrant</strong></td>
 <td>31.1K</td>
 <td>Rust</td>
 <td>Apache 2.0</td>
@@ -1137,7 +1137,7 @@ title: LLM в России — дорожная карта
 <td>Квантование векторов (экономия RAM до 97%); фильтрация по payload</td>
 </tr>
 <tr>
-<td>**Milvus**</td>
+<td><strong>Milvus</strong></td>
 <td>44.2K</td>
 <td>Go + C++</td>
 <td>Apache 2.0</td>
@@ -1147,7 +1147,7 @@ title: LLM в России — дорожная карта
 <td>GPU acceleration, fully distributed, 10B+ векторов</td>
 </tr>
 <tr>
-<td>**Weaviate**</td>
+<td><strong>Weaviate</strong></td>
 <td>16.1K</td>
 <td>Go</td>
 <td>BSD-3</td>
@@ -1157,7 +1157,7 @@ title: LLM в России — дорожная карта
 <td>Гибридный поиск, RAG, реранкинг, мультиарендность</td>
 </tr>
 <tr>
-<td>**Pinecone**</td>
+<td><strong>Pinecone</strong></td>
 <td>—</td>
 <td>—</td>
 <td>Проприетарная</td>
@@ -1171,7 +1171,7 @@ title: LLM в России — дорожная карта
 
 </details>
 
-**Когда нужна векторная БД:** если вы строите RAG-систему, работаете с большими документами, или хотите кастомную память агента с семантическим поиском. Для большинства пользователей достаточно Mem0 (self-hosted) с ChromaDB — это минимум кода и максимум результата.
+<strong>Когда нужна векторная БД:</strong> если вы строите RAG-систему, работаете с большими документами, или хотите кастомную память агента с семантическим поиском. Для большинства пользователей достаточно Mem0 (self-hosted) с ChromaDB — это минимум кода и максимум результата.
 
 Экосистема расширений — то, что превращает агента из игрушки в инструмент. Плагины и скиллы добавляют способности. Memory-решения добавляют контекст между сессиями. Векторные БД — фундамент. Почти всё open-source и работает локально — российскому пользователю здесь вольготно.
 
@@ -1179,17 +1179,17 @@ title: LLM в России — дорожная карта
 
 ### Полный суверенитет и абсолютное погружение: локальный инференс
 
-Вы преисполнились. Вам мало облачных API. Хочется, чтобы модель работала на вашем железе, без интернета, без лимитов, без оглядки на чужие серверы. Все - мы в стадии локального развертывания БЯМ. Здесь три составляющих: **где брать модели**, **чем их запускать** и **на чём их запускать**. Ответ на последний вопрос суперпростой - на чем угодно. Современные модели постояннно оптимизируются под "слабенькие" железки, снижают требования к объему памяти и вычислительной мощности квантизацией и ротацией активных параметров. **Видеокарта НЕ обязательна** - большинство инструментов запуска (почти у всех под капотом llama.cpp) прекрасно работает как с GPU, так и со связкой CPU+RAM. Отсюда стандартный вывод: много оперативы не бывает.
+Вы преисполнились. Вам мало облачных API. Хочется, чтобы модель работала на вашем железе, без интернета, без лимитов, без оглядки на чужие серверы. Все - мы в стадии локального развертывания БЯМ. Здесь три составляющих: <strong>где брать модели</strong>, <strong>чем их запускать</strong> и <strong>на чём их запускать</strong>. Ответ на последний вопрос суперпростой - на чем угодно. Современные модели постояннно оптимизируются под "слабенькие" железки, снижают требования к объему памяти и вычислительной мощности квантизацией и ротацией активных параметров. <strong>Видеокарта НЕ обязательна</strong> - большинство инструментов запуска (почти у всех под капотом llama.cpp) прекрасно работает как с GPU, так и со связкой CPU+RAM. Отсюда стандартный вывод: много оперативы не бывает.
 
 #### Репозитории моделей
 
-Главный хаб планеты — **[Hugging Face](https://huggingface.co/)**. 2 миллиона моделей. Доступен из России без VPN (май 2026). Некоторые российские аккаунты удалены, но сам сайт открыт. При больших загрузках может барахлить без VPN.
+Главный хаб планеты — <strong>[Hugging Face](https://huggingface.co/)</strong>. 2 миллиона моделей. Доступен из России без VPN (май 2026). Некоторые российские аккаунты удалены, но сам сайт открыт. При больших загрузках может барахлить без VPN.
 
-**[ModelScope](https://www.modelscope.ai/home)** — китайский аналог HF от Alibaba. Эксклюзивные китайские модели, которых нет на Hugging Face.
+<strong>[ModelScope](https://www.modelscope.ai/home)</strong> — китайский аналог HF от Alibaba. Эксклюзивные китайские модели, которых нет на Hugging Face.
 
-**[Ollama Library](https://ollama.com/library)** — встроенный реестр моделей для инструмента Ollama.
+<strong>[Ollama Library](https://ollama.com/library)</strong> — встроенный реестр моделей для инструмента Ollama.
 
-**[CivitAI](https://civitai.com/models)** — репозиторий моделей для генерации изображений (Stable Diffusion, Flux).
+<strong>[CivitAI](https://civitai.com/models)</strong> — репозиторий моделей для генерации изображений (Stable Diffusion, Flux).
 
 <details>
 <summary> Таблица 4.1 Репозитории открытых моделей. Сервисы для хостинга LLM-инстансов </summary>
@@ -1204,27 +1204,27 @@ title: LLM в России — дорожная карта
 </thead>
 <tbody>
 <tr>
-<td>**Hugging Face** (huggingface.co)</td>
+<td><strong>Hugging Face</strong> (huggingface.co)</td>
 <td>Основной мировой репозиторий — 2M+ моделей</td>
 <td>✅ Доступен из РФ (май 2026). Некоторые аккаунты РФ-организаций (sberbank-ai) удалены, но сайт открыт.</td>
 </tr>
 <tr>
-<td>**GitHub** (github.com)</td>
+<td><strong>GitHub</strong> (github.com)</td>
 <td>Хостинг кода, Git LFS для моделей, релизы</td>
 <td>✅ Доступен.</td>
 </tr>
 <tr>
-<td>**ModelScope** (modelscope.cn)</td>
+<td><strong>ModelScope</strong> (modelscope.cn)</td>
 <td>Китайский аналог HF от Alibaba. Китайские модели (Qwen, DeepSeek, GLM, Yi и др.)</td>
 <td>✅ Доступен. Некоторые модели эксклюзивно на ModelScope.</td>
 </tr>
 <tr>
-<td>**Ollama Library** (ollama.com/library)</td>
+<td><strong>Ollama Library</strong> (ollama.com/library)</td>
 <td>Встроенный реестр моделей Ollama</td>
 <td>✅ Доступен.</td>
 </tr>
 <tr>
-<td>**CivitAI** (civitai.com)</td>
+<td><strong>CivitAI</strong> (civitai.com)</td>
 <td>Репозиторий моделей для генерации изображений (SD, Flux)</td>
 <td>✅ Доступен.</td>
 </tr>
@@ -1237,25 +1237,25 @@ title: LLM в России — дорожная карта
 
 #### Инструменты запуска
 
-**[llama.cpp](https://github.com/ggml-org/llama.cpp)** (109K ★) — фундамент всего. Чистый C++, без внешних зависимостей. Компилируется под всё: от серверной стойки с 8×H100 до Android-телефона. Поддерживает 200+ архитектур, квантование от 1.5 до 8 бит. Multi-node через RPC. OpenAI-совместимый API-сервер.
+<strong>[llama.cpp](https://github.com/ggml-org/llama.cpp)</strong> (109K ★) — фундамент всего. Чистый C++, без внешних зависимостей. Компилируется под всё: от серверной стойки с 8×H100 до Android-телефона. Поддерживает 200+ архитектур, квантование от 1.5 до 8 бит. Multi-node через RPC. OpenAI-совместимый API-сервер.
 
-**[Ollama](https://ollama.com/)** (109K ★) — проприетарная обёртка над llama.cpp, доведённая до состояния «скачал и заработало». Одна команда `ollama run llama3` — и модель отвечает. Есть платный облачный уровень Pro/Max.
+<strong>[Ollama](https://ollama.com/)</strong> (109K ★) — проприетарная обёртка над llama.cpp, доведённая до состояния «скачал и заработало». Одна команда `ollama run llama3` — и модель отвечает. Есть платный облачный уровень Pro/Max.
 
-**[vLLM](https://vllm.ai/)** (79.3K ★) — инструмент для продакшена. Python, PagedAttention, continuous batching. Максимальная пропускная способность при массовых запросах. Multi-node. `pip install vllm` — и поехали.
+<strong>[vLLM](https://vllm.ai/)</strong> (79.3K ★) — инструмент для продакшена. Python, PagedAttention, continuous batching. Максимальная пропускная способность при массовых запросах. Multi-node. `pip install vllm` — и поехали.
 
-[**SGLang**](https://github.com/sgl-project/sglang) (18K ★) — инференс-комбайн на Питоне. Есть отдельный режим оптимизации запуска на **CPU-only** сборках. 
+[<strong>SGLang</strong>](https://github.com/sgl-project/sglang) (18K ★) — инференс-комбайн на Питоне. Есть отдельный режим оптимизации запуска на <strong>CPU-only</strong> сборках. 
 
-[**ExLlamaV3**](https://github.com/turboderp-org/exllamav3) (4.5K ★) — простое решение для простых моделек. Заявлена оптимизация под инференс на потребительских видеокарточках. 
+[<strong>ExLlamaV3</strong>](https://github.com/turboderp-org/exllamav3) (4.5K ★) — простое решение для простых моделек. Заявлена оптимизация под инференс на потребительских видеокарточках. 
 
-[**TensorRT-LLM**](https://github.com/NVIDIA/TensorRT-LLM) (12K ★) — инференс-решение от nVidia - нуф сказал
+[<strong>TensorRT-LLM</strong>](https://github.com/NVIDIA/TensorRT-LLM) (12K ★) — инференс-решение от nVidia - нуф сказал
 
-**[LM Studio](https://lmstudio.ai/)** — десктопное приложение с GUI. Встроенный каталог моделей: выбрал → скачал → запустил. OpenAI-совместимый API из коробки. Бесплатно для коммерческого использования.
+<strong>[LM Studio](https://lmstudio.ai/)</strong> — десктопное приложение с GUI. Встроенный каталог моделей: выбрал → скачал → запустил. OpenAI-совместимый API из коробки. Бесплатно для коммерческого использования.
 
-[**Open WebUI**](https://github.com/open-webui/open-webui) (137K ★, 290M+ загрузок) — комбайн для запуска модели сразу с интерфейсом. Подхватывает мультимодальные модельки и дает им интерфейсы для создания картинок, звуков видео. По сути инструмент инференса+сервер+агент в одном флаконе.
+[<strong>Open WebUI</strong>](https://github.com/open-webui/open-webui) (137K ★, 290M+ загрузок) — комбайн для запуска модели сразу с интерфейсом. Подхватывает мультимодальные модельки и дает им интерфейсы для создания картинок, звуков видео. По сути инструмент инференса+сервер+агент в одном флаконе.
 
-[**Jan**](https://github.com/janhq/jan) (82K ★) — просто чятик, который можно оживить оптимизированными Qwen-модельками или, через небольшие танцы с бубном, любой моделькой. 
+[<strong>Jan</strong>](https://github.com/janhq/jan) (82K ★) — просто чятик, который можно оживить оптимизированными Qwen-модельками или, через небольшие танцы с бубном, любой моделькой. 
 
-[**LocalAI**](https://github.com/mudler/LocalAI) (26K ★) — Очередной комбайн "для всего". Особенность: поддерживается куча бэкенд-версий,  отсюда теоретическая возможность запуска почти на любом относительно современном железе. Есть **CPU-only**
+[<strong>LocalAI</strong>](https://github.com/mudler/LocalAI) (26K ★) — Очередной комбайн "для всего". Особенность: поддерживается куча бэкенд-версий,  отсюда теоретическая возможность запуска почти на любом относительно современном железе. Есть <strong>CPU-only</strong>
 
 <details>
 <summary> Таблица 4.2 Движки инференса (backend) </summary>
@@ -1276,7 +1276,7 @@ title: LLM в России — дорожная карта
 </thead>
 <tbody>
 <tr>
-<td>**llama.cpp**</td>
+<td><strong>llama.cpp</strong></td>
 <td>Open-source (C++)</td>
 <td>Win, Lin, Mac, iOS, Android, RISC-V</td>
 <td>✓ Multi-GPU + Multi-node RPC</td>
@@ -1287,7 +1287,7 @@ title: LLM в России — дорожная карта
 <td>109K</td>
 </tr>
 <tr>
-<td>**Ollama**</td>
+<td><strong>Ollama</strong></td>
 <td>Проприетарная обёртка</td>
 <td>Win, Lin, Mac</td>
 <td>✗</td>
@@ -1298,7 +1298,7 @@ title: LLM в России — дорожная карта
 <td>109K</td>
 </tr>
 <tr>
-<td>**vLLM**</td>
+<td><strong>vLLM</strong></td>
 <td>Open-source (Python)</td>
 <td>Linux; NVIDIA/AMD/Intel/TPU</td>
 <td>✓ Tensor/Pipeline parallelism; Multi-node</td>
@@ -1309,7 +1309,7 @@ title: LLM в России — дорожная карта
 <td>79.3K</td>
 </tr>
 <tr>
-<td>**SGLang**</td>
+<td><strong>SGLang</strong></td>
 <td>Open-source (Python)</td>
 <td>Linux; NVIDIA/AMD</td>
 <td>✓ Tensor parallelism; Multi-node</td>
@@ -1320,7 +1320,7 @@ title: LLM в России — дорожная карта
 <td>18K</td>
 </tr>
 <tr>
-<td>**MLX**</td>
+<td><strong>MLX</strong></td>
 <td>Open-source (Apple)</td>
 <td>Mac (Apple Silicon), Linux</td>
 <td>Multi-device (CPU+GPU)</td>
@@ -1331,7 +1331,7 @@ title: LLM в России — дорожная карта
 <td>26K</td>
 </tr>
 <tr>
-<td>**ExLlamaV3**</td>
+<td><strong>ExLlamaV3</strong></td>
 <td>Open-source (Python/C++)</td>
 <td>Win, Lin (NVIDIA)</td>
 <td>Multi-GPU</td>
@@ -1342,7 +1342,7 @@ title: LLM в России — дорожная карта
 <td>4.5K</td>
 </tr>
 <tr>
-<td>**TensorRT-LLM**</td>
+<td><strong>TensorRT-LLM</strong></td>
 <td>Open-source (NVIDIA)</td>
 <td>Linux (NVIDIA)</td>
 <td>✓ Tensor parallelism</td>
@@ -1375,7 +1375,7 @@ title: LLM в России — дорожная карта
 </thead>
 <tbody>
 <tr>
-<td>**Open WebUI**</td>
+<td><strong>Open WebUI</strong></td>
 <td>Open-source (Web)</td>
 <td>Docker, K8s, pip</td>
 <td>Ollama, OpenAI, Anthropic, vLLM</td>
@@ -1385,7 +1385,7 @@ title: LLM в России — дорожная карта
 <td>137K</td>
 </tr>
 <tr>
-<td>**LM Studio**</td>
+<td><strong>LM Studio</strong></td>
 <td>Проприетарное (GUI)</td>
 <td>Win, Lin, Mac</td>
 <td>Встроенный (llama.cpp), Ollama</td>
@@ -1395,7 +1395,7 @@ title: LLM в России — дорожная карта
 <td>—</td>
 </tr>
 <tr>
-<td>**TextGen (oobabooga)**</td>
+<td><strong>TextGen (oobabooga)</strong></td>
 <td>Open-source (Python)</td>
 <td>Win, Lin, Mac</td>
 <td>Встроенный (Transformers, llama.cpp, ExLlamaV3)</td>
@@ -1405,7 +1405,7 @@ title: LLM в России — дорожная карта
 <td>47K</td>
 </tr>
 <tr>
-<td>**GPT4All**</td>
+<td><strong>GPT4All</strong></td>
 <td>Open-source (GUI)</td>
 <td>Win, Lin, Mac</td>
 <td>Встроенный (llama.cpp)</td>
@@ -1415,7 +1415,7 @@ title: LLM в России — дорожная карта
 <td>77.4K</td>
 </tr>
 <tr>
-<td>**KoboldCpp**</td>
+<td><strong>KoboldCpp</strong></td>
 <td>Open-source (C++)</td>
 <td>Win, Lin, Mac, Android (Termux)</td>
 <td>Встроенный (llama.cpp)</td>
@@ -1425,7 +1425,7 @@ title: LLM в России — дорожная карта
 <td>10.4K</td>
 </tr>
 <tr>
-<td>**Jan**</td>
+<td><strong>Jan</strong></td>
 <td>Open-source (Desktop)</td>
 <td>Win, Lin, Mac</td>
 <td>Встроенный (llama.cpp, ONNX), облачные</td>
@@ -1435,7 +1435,7 @@ title: LLM в России — дорожная карта
 <td>82K</td>
 </tr>
 <tr>
-<td>**LocalAI**</td>
+<td><strong>LocalAI</strong></td>
 <td>Open-source (Go)</td>
 <td>Docker, Linux, Mac</td>
 <td>Встроенный (llama.cpp, SD, whisper)</td>
@@ -1449,13 +1449,13 @@ title: LLM в России — дорожная карта
 
 </details>
 
-**Когда что выбирать:**
-- **Просто запустить модель** → Ollama (`ollama run llama3`) или LM Studio (GUI)
-- **Максимум контроля** → llama.cpp напрямую (C++, квантование, все платформы)
-- **Продакшен с высокой нагрузкой** → vLLM (универсальный) или SGLang (RAG/multi-turn, структурированный вывод)
-- **Полноценная self-hosted платформа** → Open WebUI поверх Ollama/vLLM (multi-user, RAG, MCP, функции)
-- **Apple Silicon** → MLX (разработан Apple, нативная оптимизация)
-- **Максимум на NVIDIA** → TensorRT-LLM (H100/B200, FP4)
+<strong>Когда что выбирать:</strong>
+- <strong>Просто запустить модель</strong> → Ollama (`ollama run llama3`) или LM Studio (GUI)
+- <strong>Максимум контроля</strong> → llama.cpp напрямую (C++, квантование, все платформы)
+- <strong>Продакшен с высокой нагрузкой</strong> → vLLM (универсальный) или SGLang (RAG/multi-turn, структурированный вывод)
+- <strong>Полноценная self-hosted платформа</strong> → Open WebUI поверх Ollama/vLLM (multi-user, RAG, MCP, функции)
+- <strong>Apple Silicon</strong> → MLX (разработан Apple, нативная оптимизация)
+- <strong>Максимум на NVIDIA</strong> → TensorRT-LLM (H100/B200, FP4)
 
 Российских инструментов для локального инференса нет. Российские модели запускаются через международные инструменты — те же GGUF-квантизации GigaChat 3.1 работают в llama.cpp и Ollama без проблем.
 
