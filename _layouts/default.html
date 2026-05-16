@@ -20,17 +20,6 @@
     details > table { margin: 0; border: none; }
     details > table th, details > table td { border: 1px solid #dfe2e5; }
   </style>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('details').forEach(function(details) {
-        var content = details.innerHTML;
-        if (content.includes('|') && content.includes('---')) {
-          details.innerHTML = marked.parse(content);
-        }
-      });
-    });
-  </script>
 </head>
 <body>
   {{ content }}
