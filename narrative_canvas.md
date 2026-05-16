@@ -57,7 +57,7 @@ title: LLM в России — дорожная карта
 
 Все эти чаты доступны из России без VPN. Минус: часть требует китайский номер для регистрации.
 
-<details>
+<details markdown="1">
 <summary> Таблица 1.1 Чат-боты, доступные без VPN </summary>
 
 | Чат | Вендор | Страна | Текст | Изобр. | Ген. изобр. | Файлы | Голос | Код | Поиск | Уникальные фичи веб-интерфейса |
@@ -82,7 +82,7 @@ title: LLM в России — дорожная карта
 
 А теперь — веб-чаты, которые без VPN **не открываются**: [ChatGPT](https://chatgpt.com/), [**Claude**](https://claude.ai/), [**Gemini**](https://gemini.google.com/app), [**Grok**](https://grok.com/), [**Perplexity**](https://www.perplexity.ai/), [**Mistral**](https://mistral.ai/), [**Microsoft Copilot**](https://copilot.microsoft.com/), запрещенная и экстремистская [**Meta AI**](https://www.meta.ai/). Это западные флагманы. У каждого — арсенал уникальных фич: Artifacts у Claude, Canvas и GPTs у ChatGPT, Perplexity с полным цитированием источников. Есть все, что и у web-реализаций из Поднебесной и с горкой. Но дверь заперта. Нужны VPN и, для платных подписок, иностранная карта. Досадно, но ладно.
 
-<details>
+<details markdown="1">
 <summary> Таблица 1.2 Чат-боты, доступные с VPN </summary>
 
 | Чат | Вендор | Ключевые модели (май 2026) | Уникальные фичи веб-интерфейса | Плата |
@@ -112,7 +112,7 @@ title: LLM в России — дорожная карта
 **Агрегаторы** — посредники, собирающие модели от разных вендоров под одной крышей: [**OpenRouter**](https://openrouter.ai/) *есть бесплатный план*, [**DeepInfra**](https://deepinfra.com/deepstart), [**Together AI**](https://docs.together.ai/docs/api-keys-authentication), [**Groq**](https://console.groq.com/keys) *есть бесплатный план*, [**Fireworks AI**](https://docs.fireworks.ai/api-reference/introduction), [**OpenCode (Zen/Go)**](https://opencode.ai/) *есть бесплатный план*, [**Cerebras**](https://cloud.cerebras.ai/) *есть бесплатный план*. Список можно продолжать и продолжать, заканчивая помойками-однодневками от успешных васянов с ветхими стойками в древних ЦОДах. Отмечу, многие из агрегаторов не только продают доступ к общим инференс-инстансам, для солидных господ есть предложения о покупке отдельного инстанса или, натурально, выделенного вычислительного кластера для рассупонивания модельки.
 
 
-<details>
+<details markdown="1">
 <summary> Таблица 2.1 Провайдеры API. Сводная </summary>
 
 | Провайдер | Тип | VPN | Оплата из РФ | Ключевые модели | Способ оплаты |
@@ -157,7 +157,7 @@ title: LLM в России — дорожная карта
 **[LangChain](https://github.com/langchain-ai/langchain), [CrewAI](https://github.com/crewAIInc/crewAI), [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT), [MetaGPT](https://github.com/FoundationAgents/MetaGPT), [Qwen Agent](https://github.com/QwenLM/Qwen-Agent)** — фреймворки для построения собственных агентных систем. От библиотек до платформ с marketplace.
 [**Pi-agent**](https://github.com/earendil-works/pi) (45.8K ★) — минималистичный terminal-based harness от Mario Zechner. Философия: «адаптируй pi под себя, а не наоборот». Собственный TUI-движок. Не поддерживает MCP принципиально — всё необходимое строится через extensions. По сути — эталонный каркас для построения LLM-агентов: на его SDK построен, в частности, OpenClaw.
 
-<details>
+<details markdown="1">
 <summary> Таблица 2.2 Агенты с открытым кодом </summary>
 
 | Инструмент | Тип клиента | Интерфейс | Windows | macOS | Linux | Плагины/MCP | Клиент-сервер | Язык | Интеграции | GitHub | Цена |
@@ -184,7 +184,7 @@ title: LLM в России — дорожная карта
 **[Windsurf](https://www.windsurf.dev/)** — ещё один agentic IDE. Cascade (локальный агент) + Devin (облачный). Agent Command Center — канбан-доска для управления агентами.
 **[Antigravity](https://antigravity.google/)** (Google) — десктоп-приложение. Регионально ограничен, но сообщество поддерживает `open-antigravity-patcher` для обхода блокировок в РФ.
 
-<details>
+<details markdown="1">
 <summary> Таблица 2.3 Агенты с закрытым кодом </summary>
 
 | Инструмент | Тип клиента | Вендор | Интерфейс | Windows | macOS | Linux | MCP | Клиент-сервер | Особенности | Цена |
@@ -202,7 +202,7 @@ title: LLM в России — дорожная карта
 
 **Агенты общего назначения** стоят особняком от кодинг-агентов. Это не встройка в IDE и не CLI-утилита для работы с репозиторием — это персональные ассистенты, которые живут на вашем сервере/локальной машине, помнят контекст между сессиями и доступны через Telegram, Discord, Slack и другие каналы.
 
-<details>
+<details markdown="1">
 <summary> Таблица 2.4 Агенты общего назначения (ассистенты) </summary>
 
 | Инструмент | Интерфейс | Каналы | Память | Self-host | MCP | Самообучение | Язык | GitHub | Цена |
@@ -248,7 +248,7 @@ title: LLM в России — дорожная карта
 
 .
 
-<details>
+<details markdown="1">
 <summary> Таблица 3.1 Форматы плагинов для разных экосистем </summary>
 
 | Агент | Формат плагинов | MCP | Особенности |
@@ -299,7 +299,7 @@ title: LLM в России — дорожная карта
 
 **[LangMem](https://github.com/langchain-ai/langmem)** (MIT) — Memory SDK для LangGraph-агентов.
 
-<details>
+<details markdown="1">
 <summary> Таблица 3.2 Сравнение готовых решений для организации памяти агента </summary>
 
 | Решение | Тип | Звёзд | Self-host | MCP | Подключение | Цена | Особенности |
@@ -317,7 +317,7 @@ title: LLM в России — дорожная карта
 
 **[Milvus](https://milvus.io/)** (44K ★), **[Qdrant](https://qdrant.tech/)** (31K ★), **[ChromaDB](https://www.trychroma.com/)** (28K ★), **[Weaviate](https://weaviate.io/agentic-ai)** (16K ★) — все open-source, все разворачиваются локально в Docker, все бесплатны.
 
-<details>
+<details markdown="1">
 <summary> Таблица 3.3 Векторные базы данных </summary>
 
 | БД | Звёзд | Язык | Лицензия | Сложность | Локально | Облако | Особенности |
@@ -350,7 +350,7 @@ title: LLM в России — дорожная карта
 
 **[CivitAI](https://civitai.com/models)** — репозиторий моделей для генерации изображений (Stable Diffusion, Flux).
 
-<details>
+<details markdown="1">
 <summary> Таблица 4.1 Репозитории открытых моделей. Сервисы для хостинга LLM-инстансов </summary>
 
 
@@ -388,7 +388,7 @@ title: LLM в России — дорожная карта
 
 [**LocalAI**](https://github.com/mudler/LocalAI) (26K ★) — Очередной комбайн "для всего". Особенность: поддерживается куча бэкенд-версий,  отсюда теоретическая возможность запуска почти на любом относительно современном железе. Есть **CPU-only**
 
-<details>
+<details markdown="1">
 <summary> Таблица 4.2 Движки инференса (backend) </summary>
 
 | Инструмент | Тип | Платформы | Распределённый | API | Форматы | GPU | Ключевые особенности | Звёзды |
@@ -403,7 +403,7 @@ title: LLM в России — дорожная карта
 
 </details>
 
-<details>
+<details markdown="1">
 <summary> Таблица 4.3 Интерфейсы и платформы (frontend) </summary>
 
 | Инструмент | Тип | Платформы | Подключение | MCP | RAG | Ключевые особенности | Звёзды |
