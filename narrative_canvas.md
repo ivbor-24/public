@@ -369,19 +369,19 @@
 
 **[vLLM](https://vllm.ai/)** (79.3K ★) — инструмент для продакшена. Python, PagedAttention, continuous batching. Максимальная пропускная способность при массовых запросах. Multi-node. `pip install vllm` — и поехали.
 
-[**SGLang**](https://github.com/sgl-project/sglang) (18K ★) — 
+[**SGLang**](https://github.com/sgl-project/sglang) (18K ★) — инференс-комбайн на Питоне. Есть отдельный режим оптимизации запуска на **CPU-only** сборках. 
 
-[**ExLlamaV3**](https://github.com/ExllamaV3/ExLlamaV3) (4.5K ★) — 
+[**ExLlamaV3**](https://github.com/turboderp-org/exllamav3) (4.5K ★) — простое решение для простых моделек. Заявлена оптимизация под инференс на потребительских видеокарточках. 
 
-[**TensorRT-LLM**](https://github.com/NVIDIA/TensorRT-LLM) (12K ★) — 
+[**TensorRT-LLM**](https://github.com/NVIDIA/TensorRT-LLM) (12K ★) — инференс-решение от nVidia - нуф сказал
 
 **[LM Studio](https://lmstudio.ai/)** — десктопное приложение с GUI. Встроенный каталог моделей: выбрал → скачал → запустил. OpenAI-совместимый API из коробки. Бесплатно для коммерческого использования.
 
-[**Open WebUI**](https://github.com/open-webui/open-webui) (137K ★, 290M+ загрузок) — 
+[**Open WebUI**](https://github.com/open-webui/open-webui) (137K ★, 290M+ загрузок) — комбайн для запуска модели сразу с интерфейсом. Подхватывает мультимодальные модельки и дает им интерфейсы для создания картинок, звуков видео. По сути инструмент инференса+сервер+агент в одном флаконе.
 
-[**Jan**](https://github.com/janhq/jan) (82K ★) — 
+[**Jan**](https://github.com/janhq/jan) (82K ★) — просто чятик, который можно оживить оптимизированными Qwen-модельками или, через небольшие танцы с бубном, любой моделькой. 
 
-[**LocalAI**](https://github.com/mudler/LocalAI) (26K ★) — 
+[**LocalAI**](https://github.com/mudler/LocalAI) (26K ★) — Очередной комбайн "для всего". Особенность: поддерживается куча бэкенд-версий,  отсюда теоретическая возможность запуска почти на любом относительно современном железе. Есть **CPU-only**
 
 <details>
 <summary> Таблица 4.2 Движки инференса (backend) </summary>
